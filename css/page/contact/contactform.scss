@@ -1,0 +1,32 @@
+.contact-form {
+  input.form-control {
+    padding: 1rem 2rem;
+  }
+
+  .form-required label {
+    @include absolute(top 50% left 1.5rem);
+    transform: translateY(-50%);
+    transition: all 0.5s;
+  }
+
+  .form-mess label {
+    @include absolute(top 2rem left 1.5rem);
+    transition: all 0.5s;
+  }
+
+  .form-row {
+    position: relative;
+
+    .form-control:focus ~ label {
+      top: -2rem;
+      left: 0.5rem;
+      font-size: 1.2rem;
+    }
+  }
+
+  label.isFocus {
+    left: 0.5rem;
+    font-size: 1.2rem;
+    top: -2rem;
+  }
+}

@@ -1,0 +1,85 @@
+.contact-nav-bar {
+  @extend .section-nav-bar;
+  @extend .home-section-1;
+  height: unset;
+  position: sticky;
+  top: 0;
+  margin-left: 35rem;
+  width: calc(100% - 35rem);
+  z-index: 5;
+
+  .banner {
+    @extend .banner;
+    background-color: $light-grey;
+    padding: 1.7rem 2rem;
+    position: relative;
+
+    p {
+      font-size: 0.9rem;
+    }
+
+    &::before {
+      content: "";
+      @include absolute(top 50% right 0);
+      @include box(0.2rem, 30%);
+      transform: translate(50%, -50%);
+      background-color: $light-orange;
+    }
+  }
+
+  .contact-back-home {
+    z-index: 2;
+    color: $light-grey-text;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    margin-right: 4rem;
+
+    a {
+      padding: 1.5rem 2rem;
+      padding-right: 3rem;
+      width: 22rem;
+      font-size: 1rem;
+      text-align: right;
+      letter-spacing: 0.1rem;
+      position: relative;
+
+      &::before {
+        content: "";
+        background-color: $light-grey;
+        width: 60%;
+        z-index: -1;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transition: width 0.5s;
+      }
+
+      &::after {
+        content: "";
+        background-color: $light-orange;
+        @include absolute(top 50% left 4rem);
+        @include box(5rem, 0.07rem);
+        transform: translateY(-50%);
+        transition: width 0.5s;
+      }
+
+      &:hover {
+        color: #eee;
+      }
+
+      &:hover::before {
+        width: 100%;
+      }
+
+      &:hover::after {
+        width: 3rem;
+      }
+    }
+  }
+
+  .window-scroll-progress {
+    width: 20rem;
+    left: -27.5rem;
+  }
+}

@@ -1,0 +1,301 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  line-height: 1;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+ul,
+li {
+  list-style: none;
+  list-style-type: none;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  transition: transform 0.5s;
+  font-family: inherit;
+  background: none;
+
+  &:active {
+    transform: scale(0.7);
+  }
+}
+
+img {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+a {
+  text-decoration: none;
+  transition: all 0.5s;
+  color: inherit;
+  display: inline-block;
+}
+
+i {
+  font-size: inherit;
+  font-weight: inherit;
+  display: inline-block;
+}
+
+.container {
+  max-width: 120.2rem;
+  margin: 0 auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.nav {
+  &__burger-button {
+    cursor: pointer;
+
+    [class*="burger-row"] {
+      width: 2.2rem;
+      padding: 0.03rem 0;
+      background-color: #e75a3b;
+      margin: 0.6rem 0;
+      border-radius: 0.3rem;
+      transition: transform 0.5s;
+    }
+  }
+
+  &__burger-button-clicked {
+    .burger-row-2 {
+      display: none;
+    }
+
+    .burger-row-1 {
+      transform: rotate(45deg) translate(0.2rem, 0.3rem);
+    }
+
+    .burger-row-3 {
+      transform: rotate(-45deg) translate(0.2rem, -0.3rem);
+    }
+  }
+}
+
+.form-control {
+  background: #fff;
+  border: 1px solid #ced4da;
+  outline: none;
+  display: inline-block;
+  padding: 2rem;
+  transition: all 0.5s;
+  border-radius: 0.5rem;
+  resize: none;
+  font-family: inherit;
+
+  &-valid {
+    background: transparent;
+    outline: none;
+    border: none;
+    padding: 2rem;
+  }
+
+  &:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: #80bdff;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  }
+}
+
+.fill {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.d-flex {
+  display: flex;
+
+  &-bw {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  &-end {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+
+  &-center {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@for $i from 1 through 10 {
+  .h-#{$i} {
+    height: 10% * $i;
+  }
+
+  .w-#{$i} {
+    width: 10% * $i;
+  }
+
+  .sp-#{$i} {
+    letter-spacing: 0.1rem * $i;
+  }
+}
+
+@for $i from 1 through 8 {
+  .fw-#{$i} {
+    font-weight: 100 * $i;
+  }
+}
+
+@for $i from 1 through 100 {
+  .mb-#{$i} {
+    margin-bottom: 0.1rem * $i;
+  }
+
+  .mt-#{$i} {
+    margin-top: 0.1rem * $i;
+  }
+
+  .ml-#{$i} {
+    margin-left: 0.1rem * $i;
+  }
+
+  .mr-#{$i} {
+    margin-right: 0.1rem * $i;
+  }
+
+  .fz-#{$i} {
+    font-size: 0.1rem * $i;
+  }
+
+  .lh-#{$i} {
+    line-height: 0.1rem * $i;
+  }
+}
+
+.align {
+  &-center {
+    align-items: center;
+  }
+
+  &-end {
+    align-items: flex-end;
+  }
+
+  &-start {
+    align-items: flex-start;
+  }
+
+  &-base {
+    align-items: baseline;
+  }
+}
+
+.row {
+  margin-left: -1.5rem;
+  margin-right: -1.5rem;
+
+  & > div {
+    padding: 0 1.5rem;
+  }
+}
+
+@for $i from 1 through 12 {
+  .col-#{$i} {
+    min-width: 8.33% * $i;
+    max-width: 8.33% * $i;
+  }
+}
+
+.col-2dot4 {
+  width: 20%;
+}
+
+.text {
+  &-right {
+    text-align: right;
+  }
+
+  &-center {
+    text-align: center;
+  }
+
+  &-upper {
+    text-transform: uppercase;
+  }
+}
+
+@media (min-width: 576px) {
+  @for $i from 1 through 12 {
+    .col-sm-#{$i} {
+      min-width: 8.33% * $i;
+      max-width: 8.33% * $i;
+    }
+  }
+
+  .col-sm-2dot4 {
+    width: 20%;
+  }
+}
+
+@media (min-width: 768px) {
+  @for $i from 1 through 12 {
+    .col-md-#{$i} {
+      min-width: 8.33% * $i;
+      max-width: 8.33% * $i;
+    }
+  }
+
+  .col-md-2dot4 {
+    width: 20%;
+  }
+}
+
+@media (min-width: 992px) {
+  @for $i from 1 through 12 {
+    .col-lg-#{$i} {
+      min-width: 8.33% * $i;
+      max-width: 8.33% * $i;
+    }
+  }
+
+  .col-lg-2dot4 {
+    width: 20%;
+  }
+}
+
+@media (min-width: 1200px) {
+  @for $i from 1 through 12 {
+    .col-xl-#{$i} {
+      min-width: 8.33% * $i;
+      max-width: 8.33% * $i;
+    }
+  }
+
+  .col-xl-2dot4 {
+    width: 20%;
+  }
+}
+
+@media (min-width: 2000px) {
+  html {
+    font-size: 100%;
+  }
+}

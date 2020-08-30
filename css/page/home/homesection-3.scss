@@ -1,0 +1,158 @@
+.home-section-3 {
+  .d-flex-bw > div:first-child .home-section-3__item .home-section-3__item-face {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("../asset/home/services/services-1.jpg");
+    @include background;
+  }
+
+  .d-flex-bw > div:nth-child(2) .home-section-3__item .home-section-3__item-face {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("../asset/home/services/services-2.jpg");
+    @include background;
+  }
+
+  .d-flex-bw > div:last-child .home-section-3__item .home-section-3__item-face {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("../asset/home/services/services-3.jpg");
+    @include background;
+  }
+
+  .home-section-3__item-container {
+    width: 100%;
+    height: 40rem;
+
+    @media (max-width: 991px) {
+      height: 30rem;
+      margin-bottom: 2rem;
+    }
+
+    &:hover .home-section-3__item {
+      transform: rotateY(180deg);
+    }
+  }
+
+  &__item {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    transition: transform 2s;
+    transform-style: preserve-3d;
+
+    &-face {
+      width: 100%;
+      height: 100%;
+      padding: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      position: relative;
+
+      &::before,
+      &::after {
+        content: "";
+        position: absolute;
+        @include box(5rem);
+      }
+
+      &::before {
+        top: 2rem;
+        left: 2rem;
+        border-top: 1px solid lighten($color: $light-grey, $amount: 30%);
+        border-left: 1px solid lighten($color: $light-grey, $amount: 30%);
+      }
+
+      &::after {
+        bottom: 2rem;
+        right: 2rem;
+        border-bottom: 1px solid lighten($color: $light-grey, $amount: 30%);
+        border-right: 1px solid lighten($color: $light-grey, $amount: 30%);
+      }
+
+      .item-face__label {
+        font-size: 2rem;
+        color: #eee;
+        text-align: center;
+        font-weight: 700;
+        margin-bottom: 3rem;
+      }
+
+      .item-face__desc {
+        span {
+          margin: 1rem;
+          letter-spacing: 0.1rem;
+        }
+      }
+    }
+
+    &-back {
+      @include absolute(top 0 left 0);
+      width: 100%;
+      height: 100%;
+      padding: 5rem 2rem;
+      background-color: $dark-grey;
+      transform: rotateY(-180deg);
+      z-index: 1;
+
+      .item-back__icon {
+        font-size: 6rem;
+        color: $light-orange;
+        text-align: center;
+        margin-bottom: 3.5rem;
+        position: relative;
+
+        &::before {
+          content: "";
+          width: 7rem;
+          height: 1.3rem;
+          border-radius: 1rem;
+          background-color: lighten($color: $light-grey, $amount: 8%);
+          @include absolute(top 1.5rem left 50%);
+          transform: translateX(-100%);
+          z-index: -1;
+        }
+
+        &::after {
+          content: "";
+          width: 7rem;
+          height: 1.3rem;
+          border-radius: 1rem;
+          background-color: lighten($color: $light-grey, $amount: 8%);
+          @include absolute(bottom -1rem left 50%);
+          z-index: -1;
+        }
+      }
+
+      .item-back__price {
+        background-color: $medium-grey;
+        padding: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        span {
+          padding: 0.5rem 0;
+        }
+
+        & span:first-child {
+          letter-spacing: 0.1rem;
+          flex: 1;
+          border-right: 1px solid lighten($color: $light-grey, $amount: 10%);
+          text-align: right;
+          padding-right: 1rem;
+        }
+
+        & span:last-child {
+          flex: 1;
+          padding-left: 1rem;
+          letter-spacing: 0.2rem;
+        }
+      }
+    }
+  }
+
+  &__go-to-contact {
+    margin-bottom: 2rem;
+  }
+}

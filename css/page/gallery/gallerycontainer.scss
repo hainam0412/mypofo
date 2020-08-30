@@ -1,0 +1,118 @@
+.gallery-container {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 0.4rem;
+  background-color: $dark-grey;
+  grid-auto-rows: 23.3rem;
+
+  @media (max-width: 850px) {
+    grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+  }
+
+  @media (max-width: 700px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (max-width: 550px) {
+    grid-template-columns: 1fr;
+    grid-auto-rows: unset;
+  }
+
+  .gallery-item:nth-child(14) {
+    @media (max-width: 850px) {
+      grid-column: 2/3;
+      grid-row: 1/2;
+    }
+
+    @media (max-width: 700px) {
+      grid-column: unset;
+      grid-row: unset;
+    }
+  }
+
+  .gallery-item {
+    overflow: hidden;
+    position: relative;
+
+    .item-search {
+      @include absolute(top 0 right 0);
+      @include box(4rem);
+      border-radius: 0;
+      transform: translateX(100%);
+      background-color: #333333e6;
+      transition: transform 0.3s linear;
+    }
+
+    .item-inner {
+      background-color: #333333e6;
+      transition: transform 0.3s linear;
+      position: relative;
+      padding: 2rem;
+
+      @media (max-width: 550px) {
+        @include absolute(top 100% left 0);
+        width: 100%;
+      }
+
+      &-tag {
+        & a:not(:last-child) {
+          margin-right: 1rem;
+        }
+
+        a:hover {
+          color: $light-text;
+        }
+      }
+
+      &-more {
+        &:hover {
+          color: $light-orange;
+        }
+
+        &::after {
+          content: "\f178";
+          font-family: $fontAwesome;
+          margin-left: 3rem;
+          transition: transform 0.2s;
+          display: inline-block;
+        }
+
+        &:hover::after {
+          transform: translateX(1rem);
+        }
+      }
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: all 0.5s;
+      position: relative;
+
+      &:hover {
+        transform: scale(1.2);
+        opacity: 0.8;
+      }
+    }
+
+    &:hover .item-search {
+      transform: translateX(0);
+    }
+
+    &:hover .item-inner {
+      transform: translateY(-100%);
+    }
+  }
+
+  .gallery-item.item-row-2 {
+    grid-row: span 2;
+  }
+
+  .gallery-item.item-box {
+    grid-row: span 2;
+    grid-column: span 2;
+  }
+}

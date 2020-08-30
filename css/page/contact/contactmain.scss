@@ -1,0 +1,36 @@
+#contact-main {
+  z-index: 2;
+  position: relative;
+
+  .section-title h2 {
+    z-index: 2;
+  }
+  .section-title h2::after {
+    transform: translate(-10%, -59%);
+  }
+}
+
+.contact-main {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  top: -6.8rem;
+
+  .contact-content {
+    background-color: #fff;
+    width: calc(100% - 35rem);
+    padding-top: 9rem;
+
+    .section-counter::after {
+      top: -2rem;
+    }
+  }
+
+  .contact-section-1 {
+    padding-bottom: 6rem;
+  }
+}
+
+.contact-padding {
+  padding: 4rem;
+}

@@ -1,0 +1,115 @@
+.home-section-video {
+  position: relative;
+
+  &::before {
+    content: "";
+    @include absolute(top 0 left 0);
+    width: 73%;
+    height: 100%;
+    background-color: $dark-grey;
+    z-index: -1;
+
+    @media (max-width: 575px) {
+      width: 51%;
+    }
+  }
+
+  &::after {
+    content: "";
+    @include absolute(top 0 right 0);
+    width: 29%;
+    height: 100%;
+    background-color: $light-grey;
+    z-index: -1;
+
+    @media (max-width: 575px) {
+      width: 50%;
+    }
+  }
+
+  &__frame {
+    padding: 2rem;
+    position: relative;
+
+    &::before {
+      content: "";
+      @include absolute(top 0 left 0);
+      @include box(5rem);
+      border-top: 0.1rem solid #949494;
+      border-left: 0.1rem solid #949494;
+    }
+
+    &::after {
+      content: "";
+      @include absolute(bottom 1rem left 1rem);
+      width: 50%;
+      height: 50%;
+      border-bottom: 1rem solid $light-orange;
+      border-left: 1rem solid $light-orange;
+    }
+
+    a {
+      position: absolute;
+      @include absolute(top 50% left 50%);
+      transform: translate(-50%, -50%);
+      @include box(8rem);
+      background-color: $dark-grey;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0px 0px 0px 7px rgba(255, 255, 255, 0.2);
+      z-index: 1;
+
+      &:hover {
+        box-shadow: 0px 0px 0px 17px rgba(255, 255, 255, 0.2);
+      }
+    }
+  }
+
+  &__content {
+    padding-top: 2rem;
+    padding-left: 6rem;
+    padding-right: 8rem;
+    position: relative;
+
+    @media (max-width: 1199px) {
+      position: static;
+      padding-left: 0;
+    }
+
+    @media (max-width: 320px) {
+      padding-right: 0;
+    }
+
+    &::before {
+      content: "";
+      @include absolute(top 0 right 0);
+      @include box(5rem);
+      border-top: 0.1rem solid #949494;
+      border-right: 0.1rem solid #949494;
+
+      @media (max-width: 1199px) {
+        top: 6rem;
+        right: 10rem;
+      }
+    }
+
+    &-label {
+      padding-top: 2rem;
+      text-transform: uppercase;
+      font-size: 2rem;
+      font-weight: 800;
+      position: relative;
+      margin-bottom: 3rem;
+
+      &::before {
+        content: "";
+        @include absolute(top 0 left 0);
+        width: 4rem;
+        height: 0.2rem;
+        background-color: $light-orange;
+      }
+    }
+  }
+}

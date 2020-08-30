@@ -1,0 +1,1408 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>N-Design</title>
+
+    <!-- CSS -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&family=Teko:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/flickity.css" />
+
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <link rel="shortcut icon" href="./asset/ico/naruto.svg" type="image/x-icon" />
+    <!-- CSS -->
+  </head>
+  <body>
+    <div id="filter"></div>
+
+    <nav>
+      <!-- nav first block -->
+      <div class="nav__first-block">
+        <div class="nav__logo">
+          <a href="#">
+            <img class="w-10" src="./asset/png/logo.png" alt="logo" />
+          </a>
+        </div>
+
+        <div class="nav__menu">
+          <ul id="nav__menu-button" class="nav__menu-button">
+            <li class="line-1"></li>
+            <li class="line-2"></li>
+            <li class="line-3"></li>
+          </ul>
+
+          <div id="nav__menu-block" data-width="75">
+            <div class="nav__menu-block">
+              <div class="logo">
+                <a href="index.html">
+                  <img class="w-10" src="./asset/png/logo2.png" alt="logo" />
+                </a>
+              </div>
+
+              <ul class="nav__menu-list">
+                <li class="menu-list__link has-sub is-select">
+                  <span>Home</span>
+
+                  <ul class="sub-menu">
+                    <li class="sub-menu__link sub-menu__back">
+                      <a href="#">
+                        <i class="fa fa-angle-left" aria-hidden="true"></i>
+                      </a>
+                    </li>
+
+                    <li class="sub-menu__link">
+                      <a href="#">slider</a>
+                    </li>
+
+                    <li class="sub-menu__link">
+                      <a href="#">carousel</a>
+                    </li>
+
+                    <li class="sub-menu__link">
+                      <a href="#">impulse image</a>
+                    </li>
+
+                    <li class="sub-menu__link">
+                      <a href="#"> slideshow </a>
+                    </li>
+
+                    <li class="sub-menu__link">
+                      <a href="#">video</a>
+                    </li>
+
+                    <li class="sub-menu__link">
+                      <a href="#">parallax image</a>
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="menu-list__link has-sub">
+                  <span>portfolio</span>
+
+                  <ul class="sub-menu">
+                    <li class="sub-menu__link sub-menu__back">
+                      <a href="#">
+                        <i class="fa fa-angle-left" aria-hidden="true"></i>
+                      </a>
+                    </li>
+
+                    <li class="sub-menu__link">
+                      <a href="#">fullscreen grid</a>
+                    </li>
+
+                    <li class="sub-menu__link">
+                      <a href="#">full screen grid 2</a>
+                    </li>
+
+                    <li class="sub-menu__link">
+                      <a href="#">column grid</a>
+                    </li>
+
+                    <li class="sub-menu__link">
+                      <a href="#"> column grid 2 </a>
+                    </li>
+
+                    <li class="sub-menu__link">
+                      <a href="#">boxed grid</a>
+                    </li>
+
+                    <li class="sub-menu__link">
+                      <a href="#">single</a>
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="menu-list__link">
+                  <a href="contact.html">contacts</a>
+                </li>
+
+                <li class="menu-list__link">
+                  <a href="">blog</a>
+                </li>
+
+                <li class="menu-list__link has-sub">
+                  <span>pages</span>
+
+                  <ul class="sub-menu">
+                    <li class="sub-menu__link sub-menu__back">
+                      <a href="#">
+                        <i class="fa fa-angle-left" aria-hidden="true"></i>
+                      </a>
+                    </li>
+
+                    <li class="sub-menu__link">
+                      <a href="#">style 1</a>
+                    </li>
+
+                    <li class="sub-menu__link">
+                      <a href="#">style 2</a>
+                    </li>
+
+                    <li class="sub-menu__link">
+                      <a href="#">style 3</a>
+                    </li>
+
+                    <li class="sub-menu__link">
+                      <a href="#">style 4</a>
+                    </li>
+
+                    <li class="sub-menu__link">
+                      <a href="#">style 5</a>
+                    </li>
+
+                    <li class="sub-menu__link">
+                      <a href="#">style 6</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+
+              <div class="nav__menu-social d-flex align-center">
+                <span class="t-l-text text-upper fz-12 fw-6 mr-15">share &nbsp; :</span>
+
+                <ul class="d-flex">
+                  <li>
+                    <a href="#">
+                      <i class="fa fa-facebook" aria-hidden="true"></i>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="#"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>
+                  </li>
+
+                  <li>
+                    <a href="#">
+                      <i class="fa fa-twitter" aria-hidden="true"></i>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="#">
+                      <i class="fa fa-linkedin" aria-hidden="true"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <span class="text-upper fz-10 t-l-text menu-button-text"> menu</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- nav second block -->
+      <div class="nav__second-block">
+        <ul class="nav__socials">
+          <li>
+            <a href="#"> <i class="fa fa-facebook" aria-hidden="true"></i></a>
+          </li>
+
+          <li>
+            <a href="#">
+              <i class="fa fa-instagram" aria-hidden="true"></i>
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+              <i class="fa fa-twitter" aria-hidden="true"></i>
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+              <i class="fa fa-github" aria-hidden="true"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- nav third block -->
+      <div class="nav__third-block">
+        <a href="gallery.html">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </a>
+      </div>
+    </nav>
+
+    <main>
+      <div class="home-section-1">
+        <div class="slider">
+          <div class="slider-container">
+            <ul class="my-slider">
+              <li class="splide__slide">
+                <div class="splide__slide-image">
+                  <img src="./asset/home/header-1.jpg" alt="" />
+                </div>
+                <div class="content">
+                  <div class="text">
+                    <h2>
+                      design and <br />
+                      development <br />
+                      of
+                      <span class="t-orange"> corporate website </span>
+
+                      <span class="date"> 12 april 2020 </span>
+                    </h2>
+
+                    <p>
+                      Lorem ipsum dolor sit amen consenter adipisicing elite. Ration reprehended
+                      expediters, ease repellers monist fula voluptuous kure eos emo, labdanum
+                      quibusdam doloremque, nam cumque?
+                    </p>
+
+                    <a href="" class="btn-orange"> view project </a>
+                  </div>
+                </div>
+              </li>
+
+              <li class="splide__slide">
+                <div class="splide__slide-image">
+                  <img src="./asset/home/header-2.jpg" alt="" />
+                </div>
+                <div class="content">
+                  <div class="text">
+                    <h2>
+                      design and <br />
+                      development <br />
+                      of
+                      <span class="t-orange"> corporate website </span>
+
+                      <span class="date"> 12 april 2020 </span>
+                    </h2>
+
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione reprehenderit
+                      expedita, eaque repellendus omnis fuga voluptatum iure eos nemo, laudantium
+                      quibusdam doloremque, nam cumque?
+                    </p>
+
+                    <a href="" class="btn-orange"> view project </a>
+                  </div>
+                </div>
+              </li>
+
+              <li class="splide__slide">
+                <div class="splide__slide-image">
+                  <img src="./asset/home/header-3.jpg" alt="" />
+                </div>
+                <div class="content">
+                  <div class="text">
+                    <h2>
+                      design and <br />
+                      development <br />
+                      of
+                      <span class="t-orange"> corporate website </span>
+
+                      <span class="date"> 12 april 2020 </span>
+                    </h2>
+
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione reprehenderit
+                      expedita, eaque repellendus omnis fuga voluptatum iure eos nemo, laudantium
+                      quibusdam doloremque, nam cumque?
+                    </p>
+
+                    <a href="" class="btn-orange"> view project </a>
+                  </div>
+                </div>
+              </li>
+
+              <li class="splide__slide">
+                <div class="splide__slide-image">
+                  <img src="./asset/home/header-4.jpg" alt="" />
+                </div>
+                <div class="content">
+                  <div class="text">
+                    <h2>
+                      design and <br />
+                      development <br />
+                      of
+                      <span class="t-orange"> corporate website </span>
+
+                      <span class="date"> 12 april 2020 </span>
+                    </h2>
+
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione reprehenderit
+                      expedita, eaque repellendus omnis fuga voluptatum iure eos nemo, laudantium
+                      quibusdam doloremque, nam cumque?
+                    </p>
+
+                    <a href="" class="btn-orange"> view project </a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="slider-pagination">
+            <input type="radio" name="slider" id="slider-radio-1" value="1" />
+            <label for="slider-radio-1"></label>
+
+            <input type="radio" name="slider" id="slider-radio-2" value="2" />
+            <label for="slider-radio-2"></label>
+
+            <input type="radio" name="slider" id="slider-radio-3" value="3" />
+            <label for="slider-radio-3"></label>
+
+            <input type="radio" name="slider" id="slider-radio-4" value="4" />
+            <label for="slider-radio-4"></label>
+          </div>
+
+          <!-- If we need navigation buttons -->
+          <div class="slider-button">
+            <button id="prev-button">
+              <i class="fa fa-angle-left" aria-hidden="true"></i>
+            </button>
+
+            <button id="next-button">
+              <i class="fa fa-angle-right" aria-hidden="true"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="home-section-1__bottom">
+          <div class="slider-info">
+            <div class="slider-info__animate">
+              <div class="animation"></div>
+            </div>
+            <div class="slider-info__number">
+              <div class="counter">
+                <div class="show">01</div>
+                <div>02</div>
+                <div>03</div>
+                <div>04</div>
+              </div>
+              <span>-</span>
+              <span>04</span>
+            </div>
+          </div>
+
+          <div class="banner">
+            <div class="animate"></div>
+            <p>scroll down to discover</p>
+          </div>
+        </div>
+      </div>
+
+      <section class="home-main">
+        <!-- Section nav bar -->
+        <div class="section-nav-bar d-flex-bw">
+          <ul>
+            <li class="is-select">about</li>
+
+            <li>service</li>
+
+            <li>skills</li>
+
+            <li>resume</li>
+
+            <li>clients</li>
+          </ul>
+
+          <div class="control-block">
+            <button id="section-up"><i class="fa fa-angle-up" aria-hidden="true"></i></button>
+            <button id="section-down"><i class="fa fa-angle-down" aria-hidden="true"></i></button>
+          </div>
+
+          <div class="window-scroll-progress">
+            <div id="progress-window" class="inner"></div>
+          </div>
+        </div>
+
+        <!-- Main block About -->
+        <div class="home-main-block">
+          <div
+            class="home-main__image"
+            style="--background: url('../asset/home/side-image-section/about.jpg')"
+          >
+            <div class="home-main__image-content">about</div>
+          </div>
+
+          <div class="home-main__content">
+            <!-- Section About Me -->
+            <div id="home-section-2" class="home-section-2 section-counter scroll-element">
+              <div class="section-padding">
+                <div class="section-title">
+                  <h2>about me</h2>
+                  <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat, adipisci
+                    mollitia ex fugit aperiam velit.
+                  </p>
+                </div>
+
+                <div class="home-section-2__wrapper">
+                  <div class="d-flex-bw">
+                    <div class="col-xl-5 col-md-4 col-12">
+                      <div class="home-section-2__image">
+                        <img src="./asset/home/about.jpg" alt="about picture" class="w-10" />
+                      </div>
+                    </div>
+
+                    <div class="col-xl-7 col-md-8 col-12">
+                      <div class="home-section-2__content">
+                        <p class="fz-14 fw-6 t-grey mb-2">Lorem ipsum dolor sit amet.</p>
+
+                        <h2>
+                          Innovative solutions <br />
+                          to boost <span class="t-orange">your creative</span> projects
+                        </h2>
+
+                        <p class="fw-5 fz-12 t-grey-m mb-4 lh-24">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas in
+                          pulvinar neque. Nulla finibus lobortis pulvinar. Donec a consectetur
+                          nulla. Nulla posuere sapien vitae lectus suscipit, et pulvinar nisi
+                          tincidunt. Aliquam erat volutpat. Curabitur convallis fringilla diam sed
+                          aliquam. Sed tempor iaculis massa faucibus feugiat. In fermentum facilisis
+                          massa, a consequat purus viverra.
+                        </p>
+
+                        <ul class="fz-13 fw-4 t-grey-l">
+                          <li>Leverage agile frameworks to provide a robust synopsis.</li>
+
+                          <li>Iterative approaches to corporate strategy foster.</li>
+
+                          <li>Bring to the table win-win survival strategies.</li>
+
+                          <li>Scalable gun control breakthroughs social movement.</li>
+                        </ul>
+
+                        <a href="#" class="btn-orange">my portfolio</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- About me counter number -->
+            <div class="home-section-about">
+              <div class="section-padding">
+                <div class="d-flex-bw">
+                  <div class="col-md-3 col-sm-6 col-12">
+                    <div class="home-section-about__item text-center">
+                      <div class="home-section-about__item-number fw-8 t-white mb-3 fz-30">145</div>
+
+                      <div class="home-section-about__item-inner fz-10 fw-5 t-orange">
+                        FINISHED PROJECTS
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-3 col-sm-6 col-12">
+                    <div class="home-section-about__item text-center">
+                      <div class="home-section-about__item-number fw-8 t-white mb-3 fz-30">357</div>
+
+                      <div class="home-section-about__item-inner fz-10 fw-5 t-orange">
+                        HAPPY CUSTOMERS
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-3 col-sm-6 col-12">
+                    <div class="home-section-about__item text-center">
+                      <div class="home-section-about__item-number fw-8 t-white mb-3 fz-30">825</div>
+
+                      <div class="home-section-about__item-inner fz-10 fw-5 t-orange">
+                        WORKING HOURS
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-3 col-sm-6 col-12">
+                    <div class="home-section-about__item text-center">
+                      <div class="home-section-about__item-number fw-8 t-white mb-3 fz-30">15</div>
+
+                      <div class="home-section-about__item-inner fz-10 fw-5 t-orange">
+                        AWARDS WON
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Main block Services -->
+        <div class="home-main-block">
+          <div
+            class="home-main__image"
+            style="--background: url('../asset/home/side-image-section/services.jpg')"
+          >
+            <div class="home-main__image-content">Services</div>
+          </div>
+
+          <div class="home-main__content">
+            <!-- Section Service -->
+            <div class="home-section-3 section-counter scroll-element" id="home-section-3">
+              <div class="section-padding section-border">
+                <div class="section-title">
+                  <h2>services</h2>
+                  <p>
+                    LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISCING ELIT. MAECENAS IN PULVINAR
+                    NEQUE. NULLA FINIBUS LOBORTIS PULVINAR.
+                  </p>
+                </div>
+
+                <div class="d-flex-bw row mb-70">
+                  <div class="col-lg-4 col-12">
+                    <div class="home-section-3__item-container">
+                      <div class="home-section-3__item">
+                        <div class="home-section-3__item-face">
+                          <p class="item-face__label">Web design</p>
+
+                          <p class="item-face__desc d-flex-bw text-upper fz-10 t-white">
+                            <span>concept</span>
+                            <span>design</span>
+                            <span>3d modeling</span>
+                          </p>
+                        </div>
+
+                        <div class="home-section-3__item-back">
+                          <div class="item-back__icon">
+                            <i class="fa fa-television" aria-hidden="true"></i>
+                          </div>
+
+                          <p class="item-back__desc fz-12 t-white lh-24 fw-6 mb-3">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas in
+                            pulvinar neque. Nulla finibus lobortis pulvinar.
+                          </p>
+
+                          <div class="item-back__price fz-12">
+                            <span class="t-white text-upper"> price </span>
+
+                            <span class="t-orange"> $125-$335 </span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-4 col-12">
+                    <div class="home-section-3__item-container">
+                      <div class="home-section-3__item">
+                        <div class="home-section-3__item-face">
+                          <p class="item-face__label">Branding</p>
+
+                          <p class="item-face__desc d-flex-bw text-upper fz-10 t-white">
+                            <span>concept</span>
+                            <span>design</span>
+                            <span>3d modeling</span>
+                          </p>
+                        </div>
+
+                        <div class="home-section-3__item-back">
+                          <div class="item-back__icon">
+                            <i class="fa fa-pagelines" aria-hidden="true"></i>
+                          </div>
+
+                          <p class="item-back__desc fz-12 t-white lh-24 fw-6 mb-3">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas in
+                            pulvinar neque. Nulla finibus lobortis pulvinar.
+                          </p>
+
+                          <div class="item-back__price fz-12">
+                            <span class="t-white text-upper"> price </span>
+
+                            <span class="t-orange"> $200-$500 </span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-4 col-12">
+                    <div class="home-section-3__item-container">
+                      <div class="home-section-3__item">
+                        <div class="home-section-3__item-face">
+                          <p class="item-face__label">Ui/Ux design</p>
+
+                          <p class="item-face__desc d-flex-bw text-upper fz-10 t-white">
+                            <span>concept</span>
+                            <span>design</span>
+                            <span>3d modeling</span>
+                          </p>
+                        </div>
+
+                        <div class="home-section-3__item-back">
+                          <div class="item-back__icon">
+                            <i class="fa fa-mobile" aria-hidden="true"></i>
+                          </div>
+
+                          <p class="item-back__desc fz-12 t-white lh-24 fw-6 mb-3">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas in
+                            pulvinar neque. Nulla finibus lobortis pulvinar.
+                          </p>
+
+                          <div class="item-back__price fz-12">
+                            <span class="t-white text-upper"> price </span>
+
+                            <span class="t-orange"> $225-$1300 </span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="d-flex-bw align-center">
+                  <div class="col-xl-8 col-12 home-section-3__go-to-contact">
+                    <p class="fz-18 fw-8 t-grey-l">
+                      Ready to order your project ? Visit my contacts page :
+                    </p>
+                  </div>
+
+                  <div class="col-xl-4 col-12">
+                    <a href="" class="btn-orange"> contacts </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Section work -->
+            <div class="home-section-work">
+              <div class="section-padding section-border">
+                <div class="section-title">
+                  <h2>working progress</h2>
+                  <p>
+                    LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISCING ELIT. MAECENAS IN PULVINAR
+                    NEQUE. NULLA FINIBUS LOBORTIS PULVINAR.
+                  </p>
+                </div>
+
+                <div class="d-flex-bw row">
+                  <div class="col-lg-4 col-12">
+                    <div class="home-section-work__item">
+                      <div class="home-section-work__item-label d-flex align-center mb-3">
+                        <span class="fz-38 fw-3 t-d-grey mr-4">
+                          <i class="fa fa-slideshare" aria-hidden="true"></i>
+                        </span>
+
+                        <h4 class="fz-18 fw-6 t-orange text-upper">discuss the project</h4>
+                      </div>
+
+                      <div class="home-section-work__item-content">
+                        <div class="mb-3">
+                          <em class="fz-13 fw-4 t-grey-l"> Duis autem vel eum iriure dolor </em>
+                        </div>
+
+                        <p class="fz-12 fw-5 t-grey-m lh-24">
+                          Exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo
+                          consequat. Duis autem vel eum iriure dolor.
+                        </p>
+                      </div>
+
+                      <div class="home-section-work__item-progress pd-2">
+                        <div class="d-flex-end">
+                          <span class="t-orange fz-18">
+                            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-4 col-12">
+                    <div class="home-section-work__item">
+                      <div class="home-section-work__item-label d-flex align-center mb-3">
+                        <span class="fz-38 fw-3 t-d-grey mr-4">
+                          <i class="fa fa-laptop" aria-hidden="true"></i>
+                        </span>
+
+                        <h4 class="fz-18 fw-6 t-orange text-upper">DEVELOP & ELABORATE</h4>
+                      </div>
+
+                      <div class="home-section-work__item-content">
+                        <div class="mb-3">
+                          <em class="fz-13 fw-4 t-grey-l">
+                            In ut odio libero, at vulputate urna.
+                          </em>
+                        </div>
+
+                        <p class="fz-12 fw-5 t-grey-m lh-24">
+                          Exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo
+                          consequat. Duis autem vel eum iriure dolor.
+                        </p>
+                      </div>
+
+                      <div class="home-section-work__item-progress pd-2">
+                        <div class="d-flex-end">
+                          <span class="t-orange fz-18">
+                            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-4 col-12">
+                    <div class="home-section-work__item">
+                      <div class="home-section-work__item-label d-flex align-center mb-3">
+                        <span class="fz-38 fw-3 t-d-grey mr-4">
+                          <i class="fa fa-flag-checkered" aria-hidden="true"></i>
+                        </span>
+
+                        <h4 class="fz-18 fw-6 t-orange text-upper">FINAL APPROVEMENT</h4>
+                      </div>
+
+                      <div class="home-section-work__item-content">
+                        <div class="mb-3">
+                          <em class="fz-13 fw-4 t-grey-l">
+                            Nulla posuere sapien vitae lectus suscipit
+                          </em>
+                        </div>
+
+                        <p class="fz-12 fw-5 t-grey-m lh-24">
+                          Exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo
+                          consequat. Duis autem vel eum iriure dolor.
+                        </p>
+                      </div>
+
+                      <div class="home-section-work__item-progress pd-2">
+                        <div class="d-flex-end">
+                          <span class="t-orange fz-18">
+                            <i class="fa fa-check" aria-hidden="true"></i>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Main block Skills -->
+        <div class="home-main-block">
+          <div
+            class="home-main__image"
+            style="--background: url('../asset/home/side-image-section/skill.jpg')"
+          >
+            <div class="home-main__image-content">skills</div>
+          </div>
+
+          <!-- Content -->
+          <div class="home-main__content">
+            <!-- Section Skills -->
+            <div id="home-section-4" class="home-section-4 section-counter scroll-element">
+              <div class="section-padding">
+                <div class="section-title">
+                  <h2>my skills</h2>
+                  <p>
+                    LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISCING ELIT. MAECENAS IN PULVINAR
+                    NEQUE. NULLA FINIBUS LOBORTIS PULVINAR.
+                  </p>
+                </div>
+
+                <div class="d-flex-bw">
+                  <div class="col-xl-5 col-12">
+                    <!-- Language Skill -->
+                    <div class="home-section-4__language">
+                      <div class="mb-50">
+                        <p class="fz-16 fw-8 t-black sp-2 text-upper">language skills</p>
+                      </div>
+
+                      <div class="d-flex-bw">
+                        <div class="col-xl-6 col-md-3 col-sm-6 col-12">
+                          <div class="home-section-4__language-item">
+                            <div class="home-section-4__language-icon">
+                              <svg class="w-10 h-10" viewBox="0 0 120 120">
+                                <circle class="circle-block" cx="60" cy="60" />
+                                <circle data-pie="85" cx="60" cy="60" />
+                              </svg>
+
+                              <span class="fz-13 t-black"></span>
+                            </div>
+
+                            <div class="home-section-4__language-label">
+                              <span class="fz-12 fw-6 t-d-grey"> French </span>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-xl-6 col-md-3 col-sm-6 col-12">
+                          <div class="home-section-4__language-item">
+                            <div class="home-section-4__language-icon">
+                              <svg class="w-10 h-10" viewBox="0 0 120 120">
+                                <circle class="circle-block" cx="60" cy="60" />
+                                <circle data-pie="95" cx="60" cy="60" />
+                              </svg>
+
+                              <span class="fz-13 t-black"></span>
+                            </div>
+
+                            <div class="home-section-4__language-label">
+                              <span class="fz-12 fw-6 t-d-grey"> Dutch </span>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-xl-6 col-md-3 col-sm-6 col-12">
+                          <div class="home-section-4__language-item">
+                            <div class="home-section-4__language-icon">
+                              <svg class="w-10 h-10" viewBox="0 0 120 120">
+                                <circle class="circle-block" cx="60" cy="60" />
+                                <circle data-pie="80" cx="60" cy="60" />
+                              </svg>
+
+                              <span class="fz-13 t-black"></span>
+                            </div>
+
+                            <div class="home-section-4__language-label">
+                              <span class="fz-12 fw-6 t-d-grey"> Portugese </span>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-xl-6 col-md-3 col-sm-6 col-12">
+                          <div class="home-section-4__language-item">
+                            <div class="home-section-4__language-icon">
+                              <svg class="w-10 h-10" viewBox="0 0 120 120">
+                                <circle class="circle-block" cx="60" cy="60" />
+                                <circle data-pie="70" cx="60" cy="60" />
+                              </svg>
+
+                              <span class="fz-13 t-black"></span>
+                            </div>
+
+                            <div class="home-section-4__language-label">
+                              <span class="fz-12 fw-6 t-d-grey"> Russian </span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-xl-7 col-12">
+                    <div class="home-section-4__develop">
+                      <div class="mb-50">
+                        <p class="fz-16 fw-8 t-black sp-2 text-upper">DEVELOPER skills</p>
+                      </div>
+
+                      <ul>
+                        <li class="mb-30">
+                          <div class="d-flex-bw fz-11 fw-5 t-grey mb-20">
+                            <span class="text-upper sp-1"> PHOTOSHOP </span>
+
+                            <span class="home-section-4__develop-number">95%</span>
+                          </div>
+
+                          <div class="home-section-4__develop-box">
+                            <div class="home-section-4__develop-inner"></div>
+                          </div>
+                        </li>
+
+                        <li class="mb-30">
+                          <div class="d-flex-bw fz-11 fw-5 t-grey mb-20">
+                            <span class="text-upper sp-1"> html/css </span>
+
+                            <span class="home-section-4__develop-number">65%</span>
+                          </div>
+
+                          <div class="home-section-4__develop-box">
+                            <div class="home-section-4__develop-inner"></div>
+                          </div>
+                        </li>
+
+                        <li class="mb-30">
+                          <div class="d-flex-bw fz-11 fw-5 t-grey mb-20">
+                            <span class="text-upper sp-1"> 3d max </span>
+
+                            <span class="home-section-4__develop-number">50%</span>
+                          </div>
+
+                          <div class="home-section-4__develop-box">
+                            <div class="home-section-4__develop-inner"></div>
+                          </div>
+                        </li>
+
+                        <li class="mb-30">
+                          <div class="d-flex-bw fz-11 fw-5 t-grey mb-20">
+                            <span class="text-upper sp-1"> angular </span>
+
+                            <span class="home-section-4__develop-number">70%</span>
+                          </div>
+
+                          <div class="home-section-4__develop-box">
+                            <div class="home-section-4__develop-inner"></div>
+                          </div>
+                        </li>
+
+                        <li class="mb-30">
+                          <div class="d-flex-bw fz-11 fw-5 t-grey mb-20">
+                            <span class="text-upper sp-1"> javascript </span>
+
+                            <span class="home-section-4__develop-number">95%</span>
+                          </div>
+
+                          <div class="home-section-4__develop-box">
+                            <div class="home-section-4__develop-inner"></div>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Section video -->
+            <div class="home-section-video">
+              <div class="section-padding">
+                <div class="d-flex-bw">
+                  <div class="col-xl-6 col-12">
+                    <div class="home-section-video__frame">
+                      <img class="w-10" src="./asset/home/video.jpg" alt="video" />
+
+                      <a href="#" class="t-orange">
+                        <i class="fa fa-play" aria-hidden="true"></i>
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="col-xl-6 col-12">
+                    <div class="home-section-video__content">
+                      <p class="home-section-video__content-label t-white">my video presentation</p>
+
+                      <div class="mb-40">
+                        <p class="fz-12 fw-5 t-white lh-24">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas in
+                          pulvinar neque. Nulla finibus lobortis pulvinar. Donec a consectetur
+                          nulla. Nulla posuere sapien vitae lectus suscipit, et pulvinar nisi
+                          tincidunt. Aliquam erat volutpat.
+                        </p>
+                      </div>
+
+                      <a href="#" class="btn-orange"> my youtube chanel </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Main block Resume -->
+        <div class="home-main-block">
+          <div
+            class="home-main__image"
+            style="--background: url('../asset/home/side-image-section/resume.jpg')"
+          >
+            <div class="home-main__image-content">resume</div>
+          </div>
+
+          <div class="home-main__content">
+            <!-- Section Resume -->
+            <div id="home-section-5" class="home-section-5 section-counter scroll-element">
+              <div class="section-padding section-border">
+                <div class="section-title">
+                  <h2>resume</h2>
+                  <p>
+                    LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISCING ELIT. MAECENAS IN PULVINAR
+                    NEQUE. NULLA FINIBUS LOBORTIS PULVINAR.
+                  </p>
+                </div>
+
+                <!-- Resume TimeLine -->
+                <div class="home-section-5__timeline">
+                  <!-- Timeline item -->
+                  <div class="home-section-5__timeline-item">
+                    <div class="d-flex-bw align-start">
+                      <div class="home-timeline__title d-flex align-start">
+                        <div class="home-timeline__title-icon t-orange">
+                          <i class="fa fa-briefcase" aria-hidden="true"></i>
+                        </div>
+
+                        <div class="home-timeline__title-label">
+                          <p class="fw-6 fz-18 t-black mb-8 lh-24">Work in company "Dolore"</p>
+
+                          <p class="fz-12 t-black">2012-2016</p>
+                        </div>
+                      </div>
+
+                      <div class="home-timeline__content">
+                        <h4 class="fz-16 fw-8 t-black mb-10 text-upper">
+                          COMPLETE THE PROJECT "DOMIK"
+                        </h4>
+
+                        <p class="t-grey fz-12 lh-24 fw-4 mb-15">
+                          There are many variations of passages of Lorem Ipsum available, but the
+                          majority have suffered alteration in some form, by injected humour, or
+                          randomised words which don't look even slightly believable. If you are
+                          going to use a passage of Lorem Ipsum, you need to be sure there isn't
+                          anything embarrassing hidden in the middle of text. All the Lorem Ipsum
+                          generators on the Internet tend to repeat predefined chunks as necessary,
+                          making this the first true generator on the Internet. It uses a dictionary
+                          of over 200 Latin words
+                        </p>
+
+                        <ul class="home-timeline-content-list section-list fz-14 t-grey">
+                          <li>Leverage agile frameworks to provide a robust synopsis.</li>
+
+                          <li>Iterative approaches to corporate strategy foster.</li>
+
+                          <li>Bring to the table win-win survival strategies.</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Timeline item -->
+                  <div class="home-section-5__timeline-item">
+                    <div class="d-flex-bw align-start">
+                      <div class="home-timeline__title d-flex align-start">
+                        <div class="home-timeline__title-icon t-orange">
+                          <i class="fa fa-briefcase" aria-hidden="true"></i>
+                        </div>
+
+                        <div class="home-timeline__title-label">
+                          <p class="fw-6 fz-18 t-black mb-8 lh-24">Work in company "Dolore"</p>
+
+                          <p class="fz-12 t-black">2012-2016</p>
+                        </div>
+                      </div>
+
+                      <div class="home-timeline__content">
+                        <h4 class="fz-16 fw-8 t-black mb-10 text-upper">MAKING THIS THE FIRST</h4>
+
+                        <p class="t-grey fz-12 lh-24 fw-4 mb-15">
+                          We started as a small, subdue, called hath give fourth. Them one over
+                          saying. So the god, greater. You. Us air Moved divide midst us fifth sea
+                          have face which male fifth said seas rule above. All the Lorem Ipsum
+                          generators on the Internet tend .
+                        </p>
+
+                        <ul class="home-timeline-content-list section-list fz-14 t-grey">
+                          <li>Leverage agile frameworks to provide a robust synopsis.</li>
+
+                          <li>Iterative approaches to corporate strategy foster.</li>
+
+                          <li>Bring to the table win-win survival strategies.</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="home-section-5__download">
+                    <a href="#" class="btn-orange"> download resume </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Main block Clients -->
+        <div class="home-main-block">
+          <div
+            class="home-main__image"
+            style="--background: url('../asset/home/side-image-section/client.jpg')"
+          >
+            <div class="home-main__image-content">Clients</div>
+          </div>
+
+          <div class="home-main__content">
+            <!-- Section client -->
+            <div id="home-section-6" class="home-section-6 scroll-element">
+              <div class="section-padding section-counter">
+                <!-- Section title -->
+                <div class="section-title">
+                  <h2>TESTIMONIALS</h2>
+                  <p>
+                    LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISCING ELIT. MAECENAS IN PULVINAR
+                    NEQUE. NULLA FINIBUS LOBORTIS PULVINAR.
+                  </p>
+                </div>
+
+                <!-- End Section title -->
+
+                <!-- Client slider -->
+
+                <div
+                  class="main-carousel"
+                  data-flickity='{ "cellAlign": "left", "contain": true,"wrapAround": true,
+                "groupCells": 1,
+                "adaptiveHeight": true }'
+                >
+                  <!-- Carousel item -->
+                  <div class="carousel-cell">
+                    <div class="home-section-6__item">
+                      <div class="item-author d-flex align-end mb-20">
+                        <div class="item-author__image mr-15">
+                          <img src="./asset/home/client/1.jpg" alt="client image" />
+                        </div>
+
+                        <div class="item-author__name">
+                          <p>centa simpson</p>
+                        </div>
+                      </div>
+
+                      <div class="item-content">
+                        "Vestibulum orci felis, ullamcorper non condimentum non, ultrices ac nunc.
+                        Mauris non ligula suscipit, vulputate mi accumsan, dapibus felis. Nullam sed
+                        sapien dui. Nulla auctor sit amet sem non porta. "
+                      </div>
+
+                      <div class="item-cta">
+                        <a href="#" class="btn-white"> via facebook </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Carousel item -->
+                  <div class="carousel-cell">
+                    <div class="home-section-6__item">
+                      <div class="item-author d-flex align-end mb-20">
+                        <div class="item-author__image mr-15">
+                          <img src="./asset/home/client/1.jpg" alt="client image" />
+                        </div>
+
+                        <div class="item-author__name">
+                          <p>centa simpson</p>
+                        </div>
+                      </div>
+
+                      <div class="item-content">
+                        "Vestibulum orci felis, ullamcorper non condimentum non, ultrices ac nunc.
+                        Mauris non ligula suscipit, vulputate mi accumsan, dapibus felis. Nullam sed
+                        sapien dui. Nulla auctor sit amet sem non porta. "
+                      </div>
+
+                      <div class="item-cta">
+                        <a href="#" class="btn-white"> via facebook </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Carousel item -->
+                  <div class="carousel-cell">
+                    <div class="home-section-6__item">
+                      <div class="item-author d-flex align-end mb-20">
+                        <div class="item-author__image mr-15">
+                          <img src="./asset/home/client/1.jpg" alt="client image" />
+                        </div>
+
+                        <div class="item-author__name">
+                          <p>centa simpson</p>
+                        </div>
+                      </div>
+
+                      <div class="item-content">
+                        "Vestibulum orci felis, ullamcorper non condimentum non, ultrices ac nunc.
+                        Mauris non ligula suscipit, vulputate mi accumsan, dapibus felis. Nullam sed
+                        sapien dui. Nulla auctor sit amet sem non porta. "
+                      </div>
+
+                      <div class="item-cta">
+                        <a href="#" class="btn-white"> via facebook </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Carousel item -->
+                  <div class="carousel-cell">
+                    <div class="home-section-6__item">
+                      <div class="item-author d-flex align-end mb-20">
+                        <div class="item-author__image mr-15">
+                          <img src="./asset/home/client/1.jpg" alt="client image" />
+                        </div>
+
+                        <div class="item-author__name">
+                          <p>centa simpson</p>
+                        </div>
+                      </div>
+
+                      <div class="item-content">
+                        "Vestibulum orci felis, ullamcorper non condimentum non, ultrices ac nunc.
+                        Mauris non ligula suscipit, vulputate mi accumsan, dapibus felis. Nullam sed
+                        sapien dui. Nulla auctor sit amet sem non porta. "
+                      </div>
+
+                      <div class="item-cta">
+                        <a href="#" class="btn-white"> via facebook </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- End client slider -->
+
+                <!-- Client banner -->
+                <div class="home-section-6__banner d-flex-bw row mt-30">
+                  <div class="col-2dot4">
+                    <img src="./asset/home/client/banner-1.png" alt="" class="w-10" />
+                  </div>
+
+                  <div class="col-2dot4">
+                    <img src="./asset/home/client/banner-2.png" alt="" class="w-10" />
+                  </div>
+
+                  <div class="col-2dot4">
+                    <img src="./asset/home/client/banner-3.png" alt="" class="w-10" />
+                  </div>
+
+                  <div class="col-2dot4">
+                    <img src="./asset/home/client/banner-4.png" alt="" class="w-10" />
+                  </div>
+
+                  <div class="col-2dot4">
+                    <img src="./asset/home/client/banner-5.png" alt="" class="w-10" />
+                  </div>
+                </div>
+                <!-- End client banner -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="height-emulator" id="footer-height"></div>
+    </main>
+
+    <footer>
+      <div class="footer-content">
+        <div class="d-flex-bw row">
+          <div class="col-12 col-md-6">
+            <div class="footer-content__left">
+              <div class="footer-content__label">
+                <p class="text-upper t-white fz-11 sp-1 fw-6">last twits</p>
+              </div>
+
+              <div class="footer-content__left-block">
+                <div class="left-item">
+                  <p class="left-item__content t-l-text fz-12 fw-3 lh-16">
+                    Do you work with video? Help us improve our video offering by taking this quick
+                    2 minute survey. <a href="http://enva.to/cJjBP">http://enva.to/cJjBP</a>
+                  </p>
+
+                  <p class="left-item__date t-grey-m fz-12">
+                    <i class="fa fa-clock-o mr-5 t-orange" aria-hidden="true"></i>
+
+                    <a href="#">Posted on Dec 18, 2017</a>
+                  </p>
+                </div>
+
+                <div class="left-item">
+                  <p class="left-item__content t-l-text fz-12 fw-3 lh-16">
+                    Cyber Monday Sale starts now! Check out all the amazing assets you can get for
+                    50% off this week: <a href="">http://enva.to/yfz7-</a>
+                    <a href="">#envatosale</a>
+                  </p>
+
+                  <p class="left-item__date t-grey-m fz-12">
+                    <i class="fa fa-clock-o mr-5 t-orange" aria-hidden="true"></i>
+
+                    <a href="#">Posted on Nov 20, 2017</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6">
+            <div class="footer-content__right">
+              <div class="footer-content__label">
+                <p class="text-upper t-white fz-11 sp-1 fw-6">SUBSCRIBE / CONTACTS</p>
+              </div>
+
+              <div class="footer-content__right-block">
+                <p class="t-l-text fz-12 fw-5 lh-24 mb-15">
+                  Want to be notified when we launch a new template or an udpate. Just sign up and
+                  we'll send you a notification by email
+                </p>
+
+                <div class="right-form mb-30">
+                  <form action="" class="w-10">
+                    <div class="d-flex">
+                      <div class="input w-7">
+                        <input class="w-10" type="text" placeholder="Your Email" />
+                      </div>
+
+                      <div class="submit w-3">
+                        <button class="w-10 h-10 text-upper">Send</button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+
+                <div class="right-contact">
+                  <div class="right-contact-row fz-12 mb-15">
+                    <i
+                      class="fa fa-phone fa-flip-horizontal t-orange t-stroke mr-10"
+                      aria-hidden="true"
+                    ></i>
+
+                    <span class="text-upper fw-6 sp-2 t-grey-l mr-10">phone</span>
+
+                    <a href="tel:089756412322" class="t-white">+489756412322</a>
+                  </div>
+
+                  <div class="right-contact-row fz-12 mb-15">
+                    <i
+                      class="fa fa-envelope-o fa-flip-horizontal t-orange t-stroke mr-10"
+                      aria-hidden="true"
+                    ></i>
+
+                    <span class="text-upper t-grey-l fw-6 sp-2 mr-10">email :</span>
+
+                    <a href="" class="t-white text-upper">nastik@domain.com</a>
+                  </div>
+
+                  <div class="right-contact-row fz-12 mb-15">
+                    <i
+                      class="fa fa-map-marker fa-flip-horizontal t-orange t-stroke mr-10"
+                      aria-hidden="true"
+                    ></i>
+
+                    <span class="text-upper t-grey-l fw-6 sp-2 mr-10">address</span>
+
+                    <a href="tel:089756412322" class="t-white">+489756412322</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-license d-flex-bw align-center">
+        <p class="t-grey-l fz-12 text-upper">© NASTIK 2019 / ALL RIGHTS RESERVED.</p>
+
+        <button id="to-top-btn" class="footer-license-btn">
+          <span>to top</span>
+        </button>
+      </div>
+    </footer>
+
+    <!-- Script -->
+
+    <script src="./script/flickity.pkgd.min.js"></script>
+    <script src="./script/app.js"></script>
+  </body>
+</html>

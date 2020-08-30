@@ -1,0 +1,319 @@
+footer {
+  margin-left: 8rem;
+  background-color: #262627;
+  padding: 12rem 10rem 0 10rem;
+  counter-reset: footer-counter;
+  position: fixed;
+  bottom: 0;
+  width: calc(100% - 8rem);
+
+  @media (max-width: 991px) {
+    margin-left: 0;
+    width: 100%;
+    top: 7rem;
+    bottom: unset;
+    padding-top: 1.5rem;
+  }
+
+  @media (max-width: 767px) {
+    padding-left: 6rem;
+    padding-right: 6rem;
+    position: relative;
+    padding-top: 5rem;
+    top: 0;
+  }
+
+  @media (max-width: 425px) {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  &::before {
+    content: "";
+    @include absolute(right 0 top 12rem);
+    @include box(10rem, calc(100% - 12rem));
+    background-color: #313131;
+
+    @media (max-width: 991px) {
+      top: 1.5rem;
+      height: calc(100% + 1.5rem);
+    }
+
+    @media (max-width: 767px) {
+      top: 5rem;
+      height: calc(100% - 5rem);
+    }
+
+    @media (max-width: 425px) {
+      display: none;
+    }
+  }
+
+  .footer-content {
+    background-color: #313131;
+    padding: 6rem;
+    padding-top: 10rem;
+    position: relative;
+
+    @media (max-width: 991px) {
+      padding-top: 2.5rem;
+    }
+
+    @media (max-width: 425px) {
+      padding-left: 3rem;
+      padding-right: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    &::before {
+      content: "";
+      @include absolute(top -0.8rem left -0.8rem);
+      @include box(30%, 50%);
+      border-top: 0.8rem solid $light-orange;
+      border-left: 0.8rem solid $light-orange;
+
+      @media (max-width: 425px) {
+        border-top: 0.2rem solid $light-orange;
+        border-left: 0.2rem solid $light-orange;
+        @include absolute(top -0.2rem left -0.2rem);
+        @include box(20%, 20%);
+      }
+    }
+
+    &::after {
+      content: "";
+      @include absolute(right 0 top 50%);
+      @include box(0.02rem, 60%);
+      background-color: $medium-grey-text;
+      transform: translate(50%, -50%);
+
+      @media (max-width: 425px) {
+        content: "";
+        top: unset;
+        @include absolute(bottom -0.2rem right -0.2rem);
+        @include box(20%, 20%);
+        border-bottom: 0.2rem solid $light-orange;
+        border-right: 0.2rem solid $light-orange;
+        background-color: transparent;
+        transform: translate(0, 0);
+      }
+    }
+
+    &__label {
+      padding-bottom: 1rem;
+      border-bottom: 0.1rem solid $light-grey-text;
+      margin-bottom: 2rem;
+
+      p::before {
+        counter-increment: footer-counter;
+        content: "00" counter(footer-counter) ".";
+        margin-right: 1.5rem;
+        color: $light-orange;
+      }
+    }
+
+    &__left {
+      &-block {
+        @media (max-width: 767px) {
+          margin-bottom: 3rem;
+        }
+      }
+
+      .left-item {
+        padding-left: 1rem;
+        padding-bottom: 1.5rem;
+        padding-top: 1.8rem;
+        border-bottom: 0.1rem dotted $light-text;
+        cursor: pointer;
+
+        &__content {
+          margin-bottom: 1.5rem;
+          background-color: #373737;
+          border-radius: 0.8rem;
+          padding: 1.5rem;
+          position: relative;
+
+          &::before {
+            content: "";
+            background-color: $light-orange;
+            @include absolute(top 50% left -1rem);
+            transform: translate(-50%, -50%);
+            @include box(0.1rem, 2rem);
+          }
+
+          a {
+            color: #eee;
+
+            &:hover {
+              color: $light-orange;
+            }
+          }
+        }
+
+        &:hover .left-item__content {
+          background-color: #404040;
+        }
+
+        &__date {
+          a:hover {
+            color: #eee;
+          }
+        }
+      }
+    }
+
+    &__right {
+      &-block {
+        padding-top: 1.8rem;
+      }
+
+      .right-form {
+        input {
+          outline: none;
+          border: none;
+          padding: 1.5rem 2rem;
+          background-color: #484848;
+          border-radius: 0.6 0rem 0rem 0.6rem;
+          color: #eee;
+        }
+
+        ::-webkit-input-placeholder {
+          /* Edge */
+          color: #eee;
+        }
+
+        :-ms-input-placeholder {
+          /* Internet Explorer 10-11 */
+          color: #eee;
+        }
+
+        ::placeholder {
+          color: #eee;
+        }
+
+        button {
+          background-color: $light-orange;
+          border-radius: 0 0.6rem 0.6rem 0;
+          color: #eee;
+          font-size: 1.2rem;
+          transition: all 0.4s;
+
+          &::before {
+            content: "\f1d9";
+            margin-right: 0.8rem;
+            font-family: FontAwesome;
+          }
+
+          &:hover {
+            background-color: #292a2d;
+            color: $light-orange;
+          }
+        }
+      }
+
+      .right-contact {
+        &-row {
+          span:hover {
+            color: #eee;
+          }
+        }
+      }
+    }
+  }
+
+  .footer-license {
+    padding: 3rem 0;
+    background-color: #292929;
+    padding-right: 8rem;
+    position: relative;
+
+    @media (max-width: 991px) {
+      padding: 1.5rem 0;
+      padding-right: 3rem;
+    }
+
+    @media (max-width: 425px) {
+      padding-left: 1.5rem;
+    }
+
+    &::before {
+      content: "";
+      @include absolute(right 100% top -2rem);
+      width: 10rem;
+      background-color: #292929;
+      height: calc(100% + 2rem);
+
+      @media (max-width: 425px) {
+        display: none;
+      }
+    }
+
+    &::after {
+      content: "";
+      @include absolute(top 50% right 0);
+      @include box(5rem, 0.01rem);
+      background-color: $medium-grey-text;
+      transform: translate(50%, -50%);
+
+      @media (max-width: 425px) {
+        right: -1.5rem;
+        width: 3rem;
+        transform: translate(0, -50%);
+      }
+    }
+
+    &-btn {
+      color: #eee;
+      @include centerText;
+      text-transform: uppercase;
+      width: 13rem;
+      height: 3.6rem;
+      letter-spacing: 0.2rem;
+      font-size: 1rem;
+      transition: all 0.5s;
+      transform-origin: top;
+      position: relative;
+      background-color: #383838;
+
+      @media (max-width: 510px) {
+        @include box(3rem);
+      }
+
+      span {
+        z-index: 1;
+
+        @media (max-width: 510px) {
+          display: none;
+        }
+      }
+
+      &::before {
+        content: "";
+        @include absolute(top 0 left 0);
+        @include box(100%);
+        background-color: $light-orange;
+        transition: all 0.5s;
+        max-height: 100vh;
+      }
+
+      &::after {
+        content: "\f106";
+        font-family: $fontAwesome;
+        color: #eee;
+        z-index: 1;
+      }
+
+      &:hover::before {
+        max-height: 0;
+      }
+
+      &:hover span {
+        color: $light-orange;
+      }
+
+      &:hover::after {
+        color: $light-orange;
+      }
+    }
+  }
+}

@@ -1,0 +1,15 @@
+.contact-side-inner {
+  @extend .home-main__image-content;
+}
+
+.contact-side-image {
+  width: 35rem;
+  position: sticky;
+  height: 100vh;
+  top: 0;
+
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("../asset/home/side-image-section/client.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}

@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+
+    <!-- CSS -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&family=Teko:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./font/et-line-font/style.css" />
+    <link rel="stylesheet" href="./css/flickity.css" />
+
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <link rel="shortcut icon" href="./asset/ico/contact.svg" type="image/x-icon" />
+    <!-- CSS -->
+  </head>
+  <body id="contact-page">
+    <div id="filter"></div>
+
+    <nav>
+      <!-- nav first block -->
+      <div class="nav__first-block">
+        <div class="nav__logo">
+          <a href="index.html">
+            <img class="w-10" src="./asset/png/logo.png" alt="logo" />
+          </a>
+        </div>
+
+        <div class="nav__menu">
+          <ul id="nav__menu-button" class="nav__menu-button">
+            <li class="line-1"></li>
+            <li class="line-2"></li>
+            <li class="line-3"></li>
+          </ul>
+
+          <div id="nav__menu-block" data-width="75">
+            <div class="nav__menu-block">
+              <div class="logo">
+                <a href="index.html">
+                  <img class="w-10" src="./asset/png/logo2.png" alt="logo" />
+                </a>
+              </div>
+
+              <ul class="nav__menu-list">
+                <li class="menu-list__link has-sub is-select">
+                  <span>Home</span>
+
+                  <ul class="sub-menu">
+                    <li class="sub-menu__link sub-menu__back">
+                      <a href="#">
+                        <i class="fa fa-angle-left" aria-hidden="true"></i>
+                      </a>
+                    </li>
+
+                    <li class="sub-menu__link">
+                      <a href="#">slider</a>
+                    </li>
+
+                    <li class="sub-menu__link">
+                      <a href="#">carousel</a>
+                    </li>
+
+                    <li class="sub-menu__link">
+                      <a href="#">impulse image</a>
+                    </li>
+
+                    <li class="sub-menu__link">
+                      <a href="#"> slideshow </a>
+                    </li>
+
+                    <li class="sub-menu__link">
+                      <a href="#">video</a>
+                    </li>
+
+                    <li class="sub-menu__link">
+                      <a href="#">parallax image</a>
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="menu-list__link has-sub">
+                  <span>portfolio</span>
+
+                  <ul class="sub-menu">
+                    <li class="sub-menu__link sub-menu__back">
+                      <a href="#">
+                        <i class="fa fa-angle-left" aria-hidden="true"></i>
+                      </a>
+                    </li>
+
+                    <li class="sub-menu__link">
+                      <a href="#">fullscreen grid</a>
+                    </li>
+
+                    <li class="sub-menu__link">
+                      <a href="#">full screen grid 2</a>
+                    </li>
+
+                    <li class="sub-menu__link">
+                      <a href="#">column grid</a>
+                    </li>
+
+                    <li class="sub-menu__link">
+                      <a href="#"> column grid 2 </a>
+                    </li>
+
+                    <li class="sub-menu__link">
+                      <a href="#">boxed grid</a>
+                    </li>
+
+                    <li class="sub-menu__link">
+                      <a href="#">single</a>
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="menu-list__link">
+                  <a href="">contacts</a>
+                </li>
+
+                <li class="menu-list__link">
+                  <a href="">blog</a>
+                </li>
+
+                <li class="menu-list__link has-sub">
+                  <span>pages</span>
+
+                  <ul class="sub-menu">
+                    <li class="sub-menu__link sub-menu__back">
+                      <a href="#">
+                        <i class="fa fa-angle-left" aria-hidden="true"></i>
+                      </a>
+                    </li>
+
+                    <li class="sub-menu__link">
+                      <a href="#">style 1</a>
+                    </li>
+
+                    <li class="sub-menu__link">
+                      <a href="#">style 2</a>
+                    </li>
+
+                    <li class="sub-menu__link">
+                      <a href="#">style 3</a>
+                    </li>
+
+                    <li class="sub-menu__link">
+                      <a href="#">style 4</a>
+                    </li>
+
+                    <li class="sub-menu__link">
+                      <a href="#">style 5</a>
+                    </li>
+
+                    <li class="sub-menu__link">
+                      <a href="#">style 6</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+
+              <div class="nav__menu-social d-flex align-center">
+                <span class="t-l-text text-upper fz-12 fw-6 mr-15">share &nbsp; :</span>
+
+                <ul class="d-flex">
+                  <li>
+                    <a href="#">
+                      <i class="fa fa-facebook" aria-hidden="true"></i>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="#"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>
+                  </li>
+
+                  <li>
+                    <a href="#">
+                      <i class="fa fa-twitter" aria-hidden="true"></i>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="#">
+                      <i class="fa fa-linkedin" aria-hidden="true"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <span class="text-upper fz-10 t-l-text menu-button-text"> menu</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- nav second block -->
+      <div class="nav__second-block">
+        <ul class="nav__socials">
+          <li>
+            <a href="#"> <i class="fa fa-facebook" aria-hidden="true"></i></a>
+          </li>
+
+          <li>
+            <a href="#">
+              <i class="fa fa-instagram" aria-hidden="true"></i>
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+              <i class="fa fa-twitter" aria-hidden="true"></i>
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+              <i class="fa fa-github" aria-hidden="true"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- nav third block -->
+      <div class="nav__third-block">
+        <a href="gallery.html">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </a>
+      </div>
+    </nav>
+
+    <main id="contact-main">
+      <section class="contact-main">
+        <div class="contact-nav-bar d-flex-bw align-center">
+          <div class="banner">
+            <div class="animate"></div>
+            <p>scroll down to discover</p>
+          </div>
+
+          <div class="btn contact-back-home">
+            <a href="index.html" class="">back to home</a>
+          </div>
+
+          <div class="window-scroll-progress">
+            <div id="progress-window" class="inner"></div>
+          </div>
+        </div>
+
+        <aside>
+          <div class="contact-side-image">
+            <div class="contact-side-inner">contact</div>
+          </div>
+        </aside>
+
+        <div class="contact-content">
+          <div class="section-border contact-section-1 contact-padding">
+            <div class="section-counter">
+              <div class="section-title">
+                <h2>CONTACT DETAILS</h2>
+                <p>
+                  LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISCING ELIT. MAECENAS IN PULVINAR
+                  NEQUE. NULLA FINIBUS LOBORTIS PULVINAR.
+                </p>
+              </div>
+
+              <!-- details -->
+              <div class="contact-content__details mb-50">
+                <div class="d-flex-bw row">
+                  <!-- item -->
+                  <div class="col-md-4 col-12">
+                    <div class="contact-content__details-item d-flex">
+                      <div class="icon fz-30 mr-15">
+                        <span class="icon-phone" aria-hidden="true"></span>
+                      </div>
+
+                      <div class="inner">
+                        <h3 class="t-orange fz-12 text-upper mb-5">phone number</h3>
+                        <a class="t-grey fz-10 sp-1" href="tel:0374330516">+84 037 433 0516</a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- item -->
+                  <div class="col-md-4 col-12">
+                    <div class="contact-content__details-item d-flex">
+                      <div class="icon fz-30 mr-15">
+                        <span class="icon-compass"></span>
+                      </div>
+
+                      <div class="inner">
+                        <h3 class="t-orange fz-12 text-upper mb-5">office location</h3>
+                        <span class="t-grey fz-10 sp-1">USA 27TH Brooklyn NY</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- item -->
+                  <div class="col-md-4 col-12">
+                    <div class="contact-content__details-item d-flex">
+                      <div class="icon fz-30 mr-15">
+                        <span class="icon-envelope"></span>
+                      </div>
+
+                      <div class="inner">
+                        <h3 class="t-orange fz-12 text-upper mb-5">MY E-MAIL</h3>
+                        <a class="t-grey fz-10 sp-1" href="mailto: bc@example.com"
+                          >Someemail@email.com</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="contact-map">
+                <iframe
+                  class="w-10"
+                  src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d409152.7889179774!2d82.5449512184607!3d29.1111517861423!3m2!1i1024!2i768!4f13.1!5e0!3m2!1svi!2s!4v1598799223717!5m2!1svi!2s"
+                  width="600"
+                  height="450"
+                  frameborder="0"
+                  style="border: 0"
+                  allowfullscreen=""
+                  aria-hidden="false"
+                  tabindex="0"
+                ></iframe>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-padding contact-section-2">
+            <div class="section-counter">
+              <div class="section-title">
+                <h2>GET IN TOUCH</h2>
+                <p>
+                  LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISCING ELIT. MAECENAS IN PULVINAR
+                  NEQUE. NULLA FINIBUS LOBORTIS PULVINAR.
+                </p>
+              </div>
+
+              <div class="contact-form">
+                <form
+                  method="POST"
+                  name="contact-form"
+                  id="contact-form"
+                  action=""
+                  autocomplete="off"
+                  data-netlify="true"
+                >
+                  <div class="d-flex-bw row">
+                    <div class="col-md-6 col-12 mb-35">
+                      <div class="form-row form-required">
+                        <input class="w-10 form-control" type="text" name="" id="name" required />
+                        <label for="name" class="t-grey-l fw-3 fz-14">
+                          <span class="icon-profile-male mr-5"></span>
+                          <span>Your Name <sup>*</sup></span>
+                        </label>
+                      </div>
+                    </div>
+
+                    <div class="col-md-6 col-12 mb-35">
+                      <div class="form-row form-required">
+                        <input class="w-10 form-control" type="email" name="" id="email" required />
+
+                        <label for="email" class="t-grey-l fw-3 fz-14">
+                          <span class="icon-envelope mr-5"></span>
+                          <span>Email Address <sup>*</sup></span>
+                        </label>
+                      </div>
+                    </div>
+
+                    <div class="col-12 mb-35">
+                      <div class="form-row form-mess">
+                        <textarea
+                          class="form-control w-10"
+                          name=""
+                          id="message"
+                          cols="30"
+                          rows="10"
+                        ></textarea>
+
+                        <label for="message" class="t-grey-l fw-3 fz-14">
+                          <span>Your Message :</span>
+                        </label>
+                      </div>
+                    </div>
+
+                    <div class="col-12">
+                      <button class="btn-orange">send message</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="height-emulator" id="footer-height"></div>
+    </main>
+
+    <footer>
+      <div class="footer-content">
+        <div class="d-flex-bw row">
+          <div class="col-12 col-md-6">
+            <div class="footer-content__left">
+              <div class="footer-content__label">
+                <p class="text-upper t-white fz-11 sp-1 fw-6">last twits</p>
+              </div>
+
+              <div class="footer-content__left-block">
+                <div class="left-item">
+                  <p class="left-item__content t-l-text fz-12 fw-3 lh-16">
+                    Do you work with video? Help us improve our video offering by taking this quick
+                    2 minute survey. <a href="http://enva.to/cJjBP">http://enva.to/cJjBP</a>
+                  </p>
+
+                  <p class="left-item__date t-grey-m fz-12">
+                    <i class="fa fa-clock-o mr-5 t-orange" aria-hidden="true"></i>
+
+                    <a href="#">Posted on Dec 18, 2017</a>
+                  </p>
+                </div>
+
+                <div class="left-item">
+                  <p class="left-item__content t-l-text fz-12 fw-3 lh-16">
+                    Cyber Monday Sale starts now! Check out all the amazing assets you can get for
+                    50% off this week: <a href="">http://enva.to/yfz7-</a>
+                    <a href="">#envatosale</a>
+                  </p>
+
+                  <p class="left-item__date t-grey-m fz-12">
+                    <i class="fa fa-clock-o mr-5 t-orange" aria-hidden="true"></i>
+
+                    <a href="#">Posted on Nov 20, 2017</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6">
+            <div class="footer-content__right">
+              <div class="footer-content__label">
+                <p class="text-upper t-white fz-11 sp-1 fw-6">SUBSCRIBE / CONTACTS</p>
+              </div>
+
+              <div class="footer-content__right-block">
+                <p class="t-l-text fz-12 fw-5 lh-24 mb-15">
+                  Want to be notified when we launch a new template or an udpate. Just sign up and
+                  we'll send you a notification by email
+                </p>
+
+                <div class="right-form mb-30">
+                  <form action="" class="w-10">
+                    <div class="d-flex">
+                      <div class="input w-7">
+                        <input class="w-10" type="text" placeholder="Your Email" />
+                      </div>
+
+                      <div class="submit w-3">
+                        <button class="w-10 h-10 text-upper">Send</button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+
+                <div class="right-contact">
+                  <div class="right-contact-row fz-12 mb-15">
+                    <i
+                      class="fa fa-phone fa-flip-horizontal t-orange t-stroke mr-10"
+                      aria-hidden="true"
+                    ></i>
+
+                    <span class="text-upper fw-6 sp-2 t-grey-l mr-10">phone</span>
+
+                    <a href="tel:089756412322" class="t-white">+489756412322</a>
+                  </div>
+
+                  <div class="right-contact-row fz-12 mb-15">
+                    <i
+                      class="fa fa-envelope-o fa-flip-horizontal t-orange t-stroke mr-10"
+                      aria-hidden="true"
+                    ></i>
+
+                    <span class="text-upper t-grey-l fw-6 sp-2 mr-10">email :</span>
+
+                    <a href="" class="t-white text-upper">nastik@domain.com</a>
+                  </div>
+
+                  <div class="right-contact-row fz-12 mb-15">
+                    <i
+                      class="fa fa-map-marker fa-flip-horizontal t-orange t-stroke mr-10"
+                      aria-hidden="true"
+                    ></i>
+
+                    <span class="text-upper t-grey-l fw-6 sp-2 mr-10">address</span>
+
+                    <a href="tel:089756412322" class="t-white">+489756412322</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-license d-flex-bw align-center">
+        <p class="t-grey-l fz-12 text-upper">© NASTIK 2019 / ALL RIGHTS RESERVED.</p>
+
+        <button id="to-top-btn" class="footer-license-btn">
+          <span>to top</span>
+        </button>
+      </div>
+    </footer>
+
+    <script src="./script/app.js"></script>
+  </body>
+</html>

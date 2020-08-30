@@ -1,0 +1,120 @@
+.home-section-4 {
+  position: relative;
+
+  &::before {
+    content: "";
+    @include absolute(bottom 0 right 0);
+    width: 50%;
+    height: 30rem;
+    background-color: #f8f8f8;
+    z-index: -1;
+  }
+
+  &__language {
+    &-item {
+      margin-bottom: 3rem;
+
+      @media (max-width: 1199px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 4rem;
+      }
+    }
+
+    &-icon {
+      position: relative;
+      display: inline-block;
+      @include box(12rem);
+
+      img {
+        width: 100%;
+      }
+
+      svg {
+        circle {
+          r: 44;
+          fill: transparent;
+          stroke: $dark-grey;
+          stroke-width: 3rem;
+          stroke-linecap: round;
+        }
+
+        circle:not(.circle-block) {
+          --width: 0;
+          stroke: $light-orange;
+          stroke-linecap: butt;
+          stroke-dasharray: calc(276.46 / 100 * var(--width)) 276.46;
+          transform: rotate(-90deg) translate(-120px);
+        }
+      }
+
+      span {
+        @include absolute(top 50% left 50%);
+        transform: translate(-50%, -50%);
+
+        &::after {
+          content: "%";
+          font-size: 0.8rem;
+          color: $black;
+          margin-left: 0.2rem;
+        }
+      }
+    }
+
+    &-label {
+      width: 12rem;
+      margin-top: 1rem;
+      background-color: #f9f9f9;
+      padding: 1.5rem 0;
+      border: 1px solid #eee;
+      text-align: center;
+    }
+  }
+
+  &__develop {
+    ul {
+      & > li:first-child .home-section-4__develop-inner {
+        animation-delay: 0.5s;
+      }
+
+      & > li:nth-child(2) .home-section-4__develop-inner {
+        animation-delay: 0s;
+      }
+
+      & > li:nth-child(3) .home-section-4__develop-inner {
+        animation-delay: 1s;
+      }
+
+      & > li:nth-child(4) .home-section-4__develop-inner {
+        animation-delay: 0.75s;
+      }
+
+      & > li:nth-child(5) .home-section-4__develop-inner {
+        animation-delay: 0.25s;
+      }
+    }
+
+    &-box {
+      background-color: $dark-grey;
+      height: 1rem;
+      position: relative;
+    }
+
+    &-inner {
+      @include absolute(top 0 left 0);
+      background-color: $light-orange;
+      height: 100%;
+      animation: animateSkillBar infinite 2s ease-in-out;
+
+      @keyframes animateSkillBar {
+        from {
+          width: 0;
+        }
+        to {
+          width: var(--width);
+        }
+      }
+    }
+  }
+}

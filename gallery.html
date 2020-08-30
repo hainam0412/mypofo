@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gallery</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&family=Teko:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/flickity.css" />
+
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <link rel="shortcut icon" href="./asset/ico/gallery.svg" type="image/x-icon" />
+  </head>
+  <body id="gallery-page">
+    <div id="filter"></div>
+
+    <nav>
+      <div class="nav__first-block">
+        <div class="nav__logo">
+          <a href="index.html">
+            <img class="w-10" src="./asset/png/logo.png" alt="logo" />
+          </a>
+        </div>
+
+        <div class="nav__menu">
+          <ul id="nav__menu-button" class="nav__menu-button">
+            <li class="line-1"></li>
+            <li class="line-2"></li>
+            <li class="line-3"></li>
+          </ul>
+
+          <div id="nav__menu-block" data-width="75">
+            <div class="nav__menu-block">
+              <div class="logo">
+                <a href="index.html">
+                  <img class="w-10" src="./asset/png/logo2.png" alt="logo" />
+                </a>
+              </div>
+
+              <ul class="nav__menu-list">
+                <li class="menu-list__link has-sub is-select">
+                  <span>Home</span>
+
+                  <ul class="sub-menu">
+                    <li class="sub-menu__link sub-menu__back">
+                      <a href="#">
+                        <i class="fa fa-angle-left" aria-hidden="true"></i>
+                      </a>
+                    </li>
+
+                    <li class="sub-menu__link">
+                      <a href="#">slider</a>
+                    </li>
+
+                    <li class="sub-menu__link">
+                      <a href="#">carousel</a>
+                    </li>
+
+                    <li class="sub-menu__link">
+                      <a href="#">impulse image</a>
+                    </li>
+
+                    <li class="sub-menu__link">
+                      <a href="#"> slideshow </a>
+                    </li>
+
+                    <li class="sub-menu__link">
+                      <a href="#">video</a>
+                    </li>
+
+                    <li class="sub-menu__link">
+                      <a href="#">parallax image</a>
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="menu-list__link has-sub">
+                  <span>portfolio</span>
+
+                  <ul class="sub-menu">
+                    <li class="sub-menu__link sub-menu__back">
+                      <a href="#">
+                        <i class="fa fa-angle-left" aria-hidden="true"></i>
+                      </a>
+                    </li>
+
+                    <li class="sub-menu__link">
+                      <a href="#">fullscreen grid</a>
+                    </li>
+
+                    <li class="sub-menu__link">
+                      <a href="#">full screen grid 2</a>
+                    </li>
+
+                    <li class="sub-menu__link">
+                      <a href="#">column grid</a>
+                    </li>
+
+                    <li class="sub-menu__link">
+                      <a href="#"> column grid 2 </a>
+                    </li>
+
+                    <li class="sub-menu__link">
+                      <a href="#">boxed grid</a>
+                    </li>
+
+                    <li class="sub-menu__link">
+                      <a href="#">single</a>
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="menu-list__link">
+                  <a href="contact.html">contacts</a>
+                </li>
+
+                <li class="menu-list__link">
+                  <a href="">blog</a>
+                </li>
+
+                <li class="menu-list__link has-sub">
+                  <span>pages</span>
+
+                  <ul class="sub-menu">
+                    <li class="sub-menu__link sub-menu__back">
+                      <a href="#">
+                        <i class="fa fa-angle-left" aria-hidden="true"></i>
+                      </a>
+                    </li>
+
+                    <li class="sub-menu__link">
+                      <a href="#">style 1</a>
+                    </li>
+
+                    <li class="sub-menu__link">
+                      <a href="#">style 2</a>
+                    </li>
+
+                    <li class="sub-menu__link">
+                      <a href="#">style 3</a>
+                    </li>
+
+                    <li class="sub-menu__link">
+                      <a href="#">style 4</a>
+                    </li>
+
+                    <li class="sub-menu__link">
+                      <a href="#">style 5</a>
+                    </li>
+
+                    <li class="sub-menu__link">
+                      <a href="#">style 6</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+
+              <div class="nav__menu-social d-flex align-center">
+                <span class="t-l-text text-upper fz-12 fw-6 mr-15">share &nbsp; :</span>
+
+                <ul class="d-flex">
+                  <li>
+                    <a href="#">
+                      <i class="fa fa-facebook" aria-hidden="true"></i>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="#"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>
+                  </li>
+
+                  <li>
+                    <a href="#">
+                      <i class="fa fa-twitter" aria-hidden="true"></i>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="#">
+                      <i class="fa fa-linkedin" aria-hidden="true"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <span class="text-upper fz-10 t-l-text menu-button-text"> menu</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="nav__second-block">
+        <ul class="nav__socials">
+          <li>
+            <a href="#"> <i class="fa fa-facebook" aria-hidden="true"></i></a>
+          </li>
+
+          <li>
+            <a href="#">
+              <i class="fa fa-instagram" aria-hidden="true"></i>
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+              <i class="fa fa-twitter" aria-hidden="true"></i>
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+              <i class="fa fa-github" aria-hidden="true"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="nav__third-block">
+        <div>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </nav>
+
+    <main id="gallery">
+      <!-- gallery nav bar -->
+      <div class="gallery-nav-bar d-flex align-center">
+        <!--  -->
+        <div class="gallery-nav-bar__banner">
+          <p class="t-white fz-10 sp-1 fw-4 text-upper">
+            <span class="mr-5"> works filter </span
+            ><i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+          </p>
+        </div>
+
+        <!--  -->
+
+        <ul id="gallery-control" class="gallery-control">
+          <li class="fz-10 fw-5 text-upper t-l-text active" data-filter="all">all projects</li>
+
+          <li data-filter="web" class="fz-10 fw-5 text-upper t-l-text">web design</li>
+
+          <li data-filter="photo" class="fz-10 fw-5 text-upper t-l-text">photo</li>
+
+          <li data-filter="brand" class="fz-10 fw-5 text-upper t-l-text">branding</li>
+
+          <li data-filter="design" class="fz-10 fw-5 text-upper t-l-text">ui design</li>
+        </ul>
+
+        <!--  -->
+
+        <div class="gallery-counter fz-10">
+          <span class="current"></span>
+          <span class="total"></span>
+        </div>
+      </div>
+
+      <!-- gallery container -->
+      <div class="gallery-container">
+        <!-- 1 -->
+
+        <div class="gallery-item web">
+          <img src="./asset/gallery/5.jpg" alt="gallery" />
+
+          <div class="item-inner">
+            <div class="item-inner-tag fz-9 t-orange text-upper fw-5 mb-15">
+              <a href="#">design</a>
+              <a href="#">branding</a>
+            </div>
+
+            <a href="#" class="item-inner-more t-white fz-12 fw-5 text-upper sp-2"
+              >kent brant concept</a
+            >
+          </div>
+        </div>
+
+        <!-- 2 -->
+
+        <div class="gallery-item photo">
+          <img src="./asset/gallery/8.jpg" alt="gallery" />
+
+          <div class="item-inner brand">
+            <div class="item-inner-tag fz-9 t-orange text-upper fw-5 mb-15">
+              <a href="#">design</a>
+              <a href="#">branding</a>
+            </div>
+
+            <a href="#" class="item-inner-more t-white fz-12 fw-5 text-upper sp-2"
+              >kent brant concept</a
+            >
+          </div>
+        </div>
+
+        <!-- 3 -->
+
+        <div class="gallery-item item-box design">
+          <img src="./asset/gallery/6.jpg" alt="gallery" />
+
+          <div class="item-inner">
+            <div class="item-inner-tag fz-9 t-orange text-upper fw-5 mb-15">
+              <a href="#">design</a>
+              <a href="#">branding</a>
+            </div>
+
+            <a href="#" class="item-inner-more t-white fz-12 fw-5 text-upper sp-2"
+              >kent brant concept</a
+            >
+          </div>
+        </div>
+
+        <!-- 4-->
+
+        <div class="gallery-item item-row-2 design">
+          <img src="./asset/gallery/2.jpg" alt="gallery" />
+
+          <div class="item-inner">
+            <div class="item-inner-tag fz-9 t-orange text-upper fw-5 mb-15">
+              <a href="#">design</a>
+              <a href="#">branding</a>
+            </div>
+
+            <a href="#" class="item-inner-more t-white fz-12 fw-5 text-upper sp-2"
+              >kent brant concept</a
+            >
+          </div>
+        </div>
+
+        <!-- 5 -->
+
+        <div class="gallery-item web">
+          <img src="./asset/gallery/7.jpg" alt="gallery" />
+
+          <div class="item-inner">
+            <div class="item-inner-tag fz-9 t-orange text-upper fw-5 mb-15">
+              <a href="#">design</a>
+              <a href="#">branding</a>
+            </div>
+
+            <a href="#" class="item-inner-more t-white fz-12 fw-5 text-upper sp-2"
+              >kent brant concept</a
+            >
+          </div>
+        </div>
+
+        <!-- 6-->
+
+        <div class="gallery-item photo">
+          <img src="./asset/gallery/1.jpg" alt="gallery" />
+
+          <div class="item-inner">
+            <div class="item-inner-tag fz-9 t-orange text-upper fw-5 mb-15">
+              <a href="#">design</a>
+              <a href="#">branding</a>
+            </div>
+
+            <a href="#" class="item-inner-more t-white fz-12 fw-5 text-upper sp-2"
+              >kent brant concept</a
+            >
+          </div>
+        </div>
+
+        <!-- 7 -->
+
+        <div class="gallery-item item-row-2 brand">
+          <img src="./asset/gallery/4.jpg" alt="gallery" />
+
+          <div class="item-inner">
+            <div class="item-inner-tag fz-9 t-orange text-upper fw-5 mb-15">
+              <a href="#">design</a>
+              <a href="#">branding</a>
+            </div>
+
+            <a href="#" class="item-inner-more t-white fz-12 fw-5 text-upper sp-2"
+              >kent brant concept</a
+            >
+          </div>
+        </div>
+
+        <!-- 8 -->
+
+        <div class="gallery-item brand">
+          <img src="./asset/gallery/3.jpg" alt="gallery" />
+
+          <div class="item-inner">
+            <div class="item-inner-tag fz-9 t-orange text-upper fw-5 mb-15">
+              <a href="#">design</a>
+              <a href="#">branding</a>
+            </div>
+
+            <a href="#" class="item-inner-more t-white fz-12 fw-5 text-upper sp-2"
+              >kent brant concept</a
+            >
+          </div>
+        </div>
+
+        <!-- 9 -->
+
+        <div class="gallery-item brand">
+          <img src="./asset/gallery/11.jpg" alt="gallery" />
+
+          <div class="item-inner">
+            <div class="item-inner-tag fz-9 t-orange text-upper fw-5 mb-15">
+              <a href="#">design</a>
+              <a href="#">branding</a>
+            </div>
+
+            <a href="#" class="item-inner-more t-white fz-12 fw-5 text-upper sp-2"
+              >kent brant concept</a
+            >
+          </div>
+        </div>
+
+        <!-- 10 -->
+
+        <div class="gallery-item photo">
+          <img src="./asset/gallery/10.jpg" alt="gallery" />
+
+          <div class="item-inner">
+            <div class="item-inner-tag fz-9 t-orange text-upper fw-5 mb-15">
+              <a href="#">design</a>
+              <a href="#">branding</a>
+            </div>
+
+            <a href="#" class="item-inner-more t-white fz-12 fw-5 text-upper sp-2"
+              >kent brant concept</a
+            >
+          </div>
+        </div>
+
+        <!-- 11 -->
+
+        <div class="gallery-item item-row-2 web">
+          <img src="./asset/gallery/9.jpg" alt="gallery" />
+
+          <div class="item-inner">
+            <div class="item-inner-tag fz-9 t-orange text-upper fw-5 mb-15">
+              <a href="#">design</a>
+              <a href="#">branding</a>
+            </div>
+
+            <a href="#" class="item-inner-more t-white fz-12 fw-5 text-upper sp-2"
+              >kent brant concept</a
+            >
+          </div>
+        </div>
+
+        <!-- 12 -->
+
+        <div class="gallery-item web">
+          <img src="./asset/gallery/12.jpg" alt="gallery" />
+
+          <div class="item-inner">
+            <div class="item-inner-tag fz-9 t-orange text-upper fw-5 mb-15">
+              <a href="#">design</a>
+              <a href="#">branding</a>
+            </div>
+
+            <a href="#" class="item-inner-more t-white fz-12 fw-5 text-upper sp-2"
+              >kent brant concept</a
+            >
+          </div>
+        </div>
+
+        <!-- 13 -->
+
+        <div class="gallery-item design">
+          <img src="./asset/gallery/13.jpg" alt="gallery" />
+
+          <div class="item-inner">
+            <div class="item-inner-tag fz-9 t-orange text-upper fw-5 mb-15">
+              <a href="#">design</a>
+              <a href="#">branding</a>
+            </div>
+
+            <a href="#" class="item-inner-more t-white fz-12 fw-5 text-upper sp-2"
+              >kent brant concept</a
+            >
+          </div>
+        </div>
+
+        <!-- 14 -->
+
+        <div class="gallery-item design">
+          <img src="./asset/gallery/14.jpg" alt="gallery" />
+
+          <div class="item-inner">
+            <div class="item-inner-tag fz-9 t-orange text-upper fw-5 mb-15">
+              <a href="#">design</a>
+              <a href="#">branding</a>
+            </div>
+
+            <a href="#" class="item-inner-more t-white fz-12 fw-5 text-upper sp-2"
+              >kent brant concept</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <div class="gallery-modal">
+        <div class="cta">
+          <button class="zoom-out">
+            <i class="fa fa-search-minus" aria-hidden="true"></i>
+          </button>
+
+          <button class="zoom-in">
+            <i class="fa fa-search-plus" aria-hidden="true"></i>
+          </button>
+
+          <button class="exit">
+            <i class="fa fa-times" aria-hidden="true"></i>
+          </button>
+        </div>
+      </div>
+      <div class="height-emulator" id="footer-height"></div>
+    </main>
+
+    <footer>
+      <div class="footer-content">
+        <div class="d-flex-bw row">
+          <div class="col-12 col-md-6">
+            <div class="footer-content__left">
+              <div class="footer-content__label">
+                <p class="text-upper t-white fz-11 sp-1 fw-6">last twits</p>
+              </div>
+
+              <div class="footer-content__left-block">
+                <div class="left-item">
+                  <p class="left-item__content t-l-text fz-12 fw-3 lh-16">
+                    Do you work with video? Help us improve our video offering by taking this quick
+                    2 minute survey. <a href="http://enva.to/cJjBP">http://enva.to/cJjBP</a>
+                  </p>
+
+                  <p class="left-item__date t-grey-m fz-12">
+                    <i class="fa fa-clock-o mr-5 t-orange" aria-hidden="true"></i>
+
+                    <a href="#">Posted on Dec 18, 2017</a>
+                  </p>
+                </div>
+
+                <div class="left-item">
+                  <p class="left-item__content t-l-text fz-12 fw-3 lh-16">
+                    Cyber Monday Sale starts now! Check out all the amazing assets you can get for
+                    50% off this week: <a href="">http://enva.to/yfz7-</a>
+                    <a href="">#envatosale</a>
+                  </p>
+
+                  <p class="left-item__date t-grey-m fz-12">
+                    <i class="fa fa-clock-o mr-5 t-orange" aria-hidden="true"></i>
+
+                    <a href="#">Posted on Nov 20, 2017</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6">
+            <div class="footer-content__right">
+              <div class="footer-content__label">
+                <p class="text-upper t-white fz-11 sp-1 fw-6">SUBSCRIBE / CONTACTS</p>
+              </div>
+
+              <div class="footer-content__right-block">
+                <p class="t-l-text fz-12 fw-5 lh-24 mb-15">
+                  Want to be notified when we launch a new template or an udpate. Just sign up and
+                  we'll send you a notification by email
+                </p>
+
+                <div class="right-form mb-30">
+                  <form action="" class="w-10">
+                    <div class="d-flex">
+                      <div class="input w-7">
+                        <input class="w-10" type="text" placeholder="Your Email" />
+                      </div>
+
+                      <div class="submit w-3">
+                        <button class="w-10 h-10 text-upper">Send</button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+
+                <div class="right-contact">
+                  <div class="right-contact-row fz-12 mb-15">
+                    <i
+                      class="fa fa-phone fa-flip-horizontal t-orange t-stroke mr-10"
+                      aria-hidden="true"
+                    ></i>
+
+                    <span class="text-upper fw-6 sp-2 t-grey-l mr-10">phone</span>
+
+                    <a href="tel:089756412322" class="t-white">+489756412322</a>
+                  </div>
+
+                  <div class="right-contact-row fz-12 mb-15">
+                    <i
+                      class="fa fa-envelope-o fa-flip-horizontal t-orange t-stroke mr-10"
+                      aria-hidden="true"
+                    ></i>
+
+                    <span class="text-upper t-grey-l fw-6 sp-2 mr-10">email :</span>
+
+                    <a href="" class="t-white text-upper">nastik@domain.com</a>
+                  </div>
+
+                  <div class="right-contact-row fz-12 mb-15">
+                    <i
+                      class="fa fa-map-marker fa-flip-horizontal t-orange t-stroke mr-10"
+                      aria-hidden="true"
+                    ></i>
+
+                    <span class="text-upper t-grey-l fw-6 sp-2 mr-10">address</span>
+
+                    <a href="tel:089756412322" class="t-white">+489756412322</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-license d-flex-bw align-center">
+        <p class="t-grey-l fz-12 text-upper">© NASTIK 2019 / ALL RIGHTS RESERVED.</p>
+
+        <button id="to-top-btn" class="footer-license-btn">
+          <span>to top</span>
+        </button>
+      </div>
+    </footer>
+
+    <!-- Script -->
+    <script src="./script/jquery-3.5.1.min.js"></script>
+    <script src="./script/app.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        $(".gallery-control li").click(function () {
+          const value = $(this).attr("data-filter");
+
+          if (value == "all") {
+            $(".gallery-item").show("1000");
+            $(".current").text(`${$(".gallery-item").length}`);
+          } else {
+            $(".gallery-item")
+              .not("." + value)
+              .hide("1000");
+            $(".gallery-item")
+              .filter("." + value)
+              .show("1000");
+
+            var num = $(".gallery-item").filter("." + value).length;
+
+            $(".current").text(num);
+          }
+
+          $(this).addClass("active").siblings().removeClass("active");
+        });
+
+        //Open modal
+
+        $(".gallery-item .item-search").click(function () {
+          const src = $(this).parent().find("img").attr("src");
+
+          $(".gallery-modal").show("1000").addClass("show");
+          $(".gallery-modal").append(`<img src="${src}" />`);
+        });
+
+        //close gallery-modal
+        $(".cta .exit").click(function () {
+          $(".gallery-modal").hide("1000").removeClass("show");
+          $(".gallery-modal img").remove();
+        });
+
+        //zoom-in
+        function scaleImageGallery() {
+          let status = 1;
+          let roll = 4;
+          $(".zoom-in").click(function () {
+            switch (status) {
+              case 1:
+                $(".gallery-modal img").css("transform", "scale(1.2) translate(-40%,-40%)");
+                status = 2;
+                roll = 2;
+                break;
+
+              case 2:
+                $(".gallery-modal img").css("transform", "scale(1.5) translate(-30%,-30%)");
+                status = 3;
+                roll = 3;
+                break;
+
+              case 3:
+                $(".gallery-modal img").css("transform", "scale(2) translate(-10%,-5%)");
+                status = 4;
+                roll = 4;
+                break;
+
+              default:
+                break;
+            }
+          });
+
+          $(".zoom-out").click(function () {
+            switch (roll) {
+              case 4:
+                $(".gallery-modal img").css("transform", "scale(1.5) translate(-30%,-30%)");
+                status = 3;
+                roll = 3;
+                break;
+
+              case 3:
+                $(".gallery-modal img").css("transform", "scale(1.2) translate(-40%,-40%)");
+                status = 2;
+                roll = 2;
+                break;
+
+              case 2:
+                $(".gallery-modal img").css("transform", "scale(1) translate(-50%,-50%)");
+                status = 1;
+                roll = 1;
+                break;
+
+              default:
+                break;
+            }
+          });
+        }
+
+        scaleImageGallery();
+      });
+    </script>
+  </body>
+</html>

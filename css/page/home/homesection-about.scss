@@ -1,0 +1,23 @@
+.home-section-about {
+  background-color: $dark-grey;
+
+  & .col-xl-3:last-child .home-section-about__item-inner {
+    border-right: 0.1rem solid lighten($color: $light-grey, $amount: 10%);
+  }
+
+  &__item {
+    @media (max-width: 767px) {
+      padding: 2rem 0;
+    }
+
+    &-inner {
+      letter-spacing: 0.1rem;
+      padding: 0.7rem 0;
+      border-left: 0.1rem solid lighten($color: $light-grey, $amount: 10%);
+
+      @media (max-width: 767px) {
+        border-left: 0;
+      }
+    }
+  }
+}

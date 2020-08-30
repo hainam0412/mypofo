@@ -1,0 +1,57 @@
+.home-section-work {
+  counter-reset: work-counter;
+
+  &__item {
+    &-content {
+      background-color: #f9f9f9;
+      padding: 3rem 5rem 5rem 3rem;
+      border: 1px solid #eee;
+      position: relative;
+
+      @media (max-width: 991px) {
+        margin-bottom: 4rem;
+      }
+
+      &::before {
+        counter-increment: work-counter;
+        content: "0" counter(work-counter) ".";
+        @include absolute(bottom -4.5rem left 3rem);
+        font-family: $teko;
+        font-size: 6rem;
+        color: #ccc;
+        font-weight: 700;
+
+        @media (max-width: 991px) {
+          left: 1rem;
+        }
+      }
+    }
+
+    &-progress {
+      position: relative;
+      @media (max-width: 991px) {
+        transform: translateY(-150%);
+      }
+
+      &::before {
+        content: "";
+        @include absolute(top 50% right 5rem);
+        width: 45%;
+        height: 0.1rem;
+        border: 0.1rem dotted #ddd;
+
+        @media (max-width: 991px) {
+          width: 60%;
+          right: 50%;
+          transform: translateX(50%);
+        }
+
+        @media (max-width: 575px) {
+          width: 40%;
+          right: 3rem;
+          transform: translateX(0);
+        }
+      }
+    }
+  }
+}

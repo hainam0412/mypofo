@@ -1,0 +1,56 @@
+.btn-orange {
+  padding: 1.5rem 3.5rem;
+  color: #fff;
+  font-size: 1rem;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  background-color: $light-orange;
+  position: relative;
+  transition: all 0.5s;
+
+  &::before {
+    content: "";
+    background-color: $dark-grey;
+    width: 0.5rem;
+    height: 100%;
+    top: 0;
+    position: absolute;
+    left: 0;
+    transform: translateX(-0.5rem);
+    transition: all 0.5s;
+  }
+
+  &::after {
+    content: "";
+    height: 0.1rem;
+    width: 0;
+    position: absolute;
+    background-color: #fff;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 1rem;
+    transition: all 0.5s;
+  }
+
+  &:hover {
+    transform: translateX(0.5rem);
+
+    &::after {
+      width: 0.7rem;
+    }
+
+    &::before {
+      width: 1rem;
+    }
+  }
+}
+
+.btn-white {
+  padding: 1.5rem 3.5rem;
+  color: $light-orange;
+  font-size: 1rem;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  font-weight: 700;
+}

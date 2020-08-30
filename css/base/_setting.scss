@@ -1,0 +1,272 @@
+* {
+  user-select: none;
+}
+
+body {
+  font-family: $mukta;
+  counter-reset: section-counter;
+  overflow-x: hidden;
+  background-color: $dark-grey;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $teko;
+}
+
+main {
+  margin-left: 8rem;
+
+  @media (max-width: 991px) {
+    margin-left: 0;
+    padding-top: 7rem;
+  }
+}
+
+.t {
+  &-white {
+    color: #eeeeee;
+  }
+  &-black {
+    color: $black;
+  }
+
+  &-d-grey {
+    color: $dark-grey;
+  }
+
+  &-l-grey {
+    color: $light-grey;
+  }
+
+  &-l-text {
+    color: $light-text;
+  }
+  &-orange {
+    color: $light-orange;
+  }
+
+  &-grey {
+    color: $grey-text;
+  }
+
+  &-grey-m {
+    color: $medium-grey-text;
+  }
+
+  &-grey-l {
+    color: $light-grey-text;
+  }
+
+  &-stroke {
+    -webkit-text-stroke: 0.12rem currentColor;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+@keyframes swipeLeft {
+  from {
+    transform: translateX(50%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeDown {
+  from {
+    transform: translateY(-50%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.section {
+  &-title {
+    text-transform: uppercase;
+    margin-bottom: 5rem;
+    padding-bottom: 3rem;
+    position: relative;
+    width: 40%;
+
+    @media (max-width: 767px) {
+      width: 50%;
+    }
+
+    @media (max-width: 575px) {
+      width: 90%;
+    }
+
+    &::before {
+      content: "";
+      @include absolute(bottom 0 left 0);
+      width: 150%;
+      height: 0.1rem;
+      background-color: #eee;
+
+      @media (max-width: 575px) {
+        width: 100%;
+      }
+    }
+
+    h2 {
+      font-size: 3.6rem;
+      color: $black;
+      font-weight: 800;
+      margin-top: 3rem;
+      margin-bottom: 3rem;
+      position: relative;
+      letter-spacing: 0.2rem;
+
+      &::before {
+        content: "";
+        @include absolute(top -3rem left 0);
+        width: 3rem;
+        height: 0.3rem;
+        background-color: darken($color: $light-orange, $amount: 20%);
+      }
+
+      &::after {
+        content: "";
+        @include absolute(top 50% left 0);
+        transform: translate(-40%, -59%);
+        width: 40%;
+        height: 100%;
+        background-color: #f2f2f2;
+        z-index: -1;
+      }
+    }
+
+    p {
+      color: #999999;
+      font-size: 1rem;
+      line-height: 2.2rem;
+      font-weight: 500;
+      letter-spacing: 0.1rem;
+    }
+  }
+
+  &-padding {
+    padding: 6rem 10rem;
+
+    @media (max-width: 767px) {
+      padding: 6rem;
+    }
+
+    @media (max-width: 425px) {
+      padding: 3rem 1.5rem;
+    }
+  }
+
+  &-border {
+    position: relative;
+
+    &::before {
+      content: "";
+      @include absolute(bottom 0rem left 10rem);
+      width: calc(100% - 27rem);
+      height: 0.1rem;
+      background-color: #eee;
+
+      @media (max-width: 767px) {
+        left: 6rem;
+        width: calc(100% - 19rem);
+      }
+
+      @media (max-width: 425px) {
+        left: 1.5rem;
+        width: calc(100% - 10rem);
+      }
+    }
+
+    &::after {
+      content: "";
+      @include absolute(bottom 0rem right 10rem);
+      width: 7rem;
+      height: 0.1rem;
+      background-color: $light-orange;
+
+      @media (max-width: 767px) {
+        right: 6rem;
+      }
+
+      @media (max-width: 425px) {
+        right: 1.5rem;
+      }
+    }
+  }
+
+  &-list {
+    & li:not(:last-child) {
+      margin-bottom: 2.5rem;
+    }
+    li::before {
+      font-family: "FontAwesome";
+      content: "\f178";
+      font-weight: 600;
+      color: $light-orange;
+      margin-right: 2rem;
+      line-height: 1.6;
+    }
+  }
+}
+
+.section-counter {
+  position: relative;
+
+  &::after {
+    counter-increment: section-counter;
+    content: "0" counter(section-counter) ".";
+    @include absolute(top 9rem right 14rem);
+    color: #f7f7f7;
+    font-size: 12.4rem;
+    font-weight: 700;
+    font-family: $teko;
+
+    @media (max-width: 575px) {
+      right: 3rem;
+      font-size: 5.5rem;
+      top: 3rem;
+    }
+  }
+}
+
+.cursor {
+  position: absolute;
+  border: 0.2rem solid $light-orange;
+  border-radius: 50%;
+  @include box(3rem);
+  pointer-events: none;
+  z-index: 200;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &::before {
+    content: "";
+    @include box(0.5rem);
+    background-color: $light-text;
+    border-radius: 50%;
+  }
+}
+
+.counter-text {
+  color: #f7f7f7;
+  font-weight: 700;
+  font-family: "Teko", sans-serif;
+}
+
+#filter {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+  z-index: 4;
+  display: none;
+}
