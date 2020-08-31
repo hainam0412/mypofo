@@ -8,6 +8,11 @@
   width: calc(100% - 35rem);
   z-index: 5;
 
+  @media (max-width: 1050px) {
+    width: 100%;
+    margin-left: 0;
+  }
+
   .banner {
     @extend .banner;
     background-color: $light-grey;
