@@ -1,1 +1,7 @@
-https://nampofo.netlify.app/index.html
+## Run
+
+npm install
+
+## Watch server
+
+nodemon

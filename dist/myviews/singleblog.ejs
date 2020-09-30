@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include('./partial/headsingleblog.ejs') %>
+  </head>
+  <body>
+    <%- include('./partial/navsingleblog.ejs') %>
+
+    <main id="blog-single">
+      <section class="blog-main">
+        <div class="blog-nav d-flex-bw align-center">
+          <div class="banner">
+            <div class="animate"></div>
+            <p>scroll down to discover</p>
+          </div>
+
+          <div class="window-scroll-progress">
+            <div id="progress-window" class="inner"></div>
+          </div>
+        </div>
+
+        <aside class="blog-side">
+          <div class="blog-side-inner">blog</div>
+        </aside>
+
+        <div class="blog-main-content">
+          <div class="blog-item">
+            <h1 class="blog-item__title"><%= blog.title %></h1>
+
+            <div class="blog-item__label d-flex align-center mb-30">
+              <div class="blog-item__date"></div>
+
+              <div class="blog-item__categories text-upper">
+                <span class="t-orange mr-5">Categories :</span>
+                <% if (blog.categories.length > 0) { %> <%= blog.categories %> <% }else { %> Unknown
+                <% } %>
+              </div>
+            </div>
+
+            <div class="blog-single__inner mb-30">
+              <p class="mb-40 lh-24"><%= blog.body %></p>
+            </div>
+
+            <div class="text-right">
+              <button id="delete-button" class="btn-orange" data-doc="<%= blog._id%>">
+                Delete blog
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="height-emulator" id="footer-height"></div>
+    </main>
+
+    <%- include('./partial/footer.ejs') %>
+    <script src="../script/app.js"></script>
+
+    <script>
+      const del = document.getElementById("delete-button");
+
+      del.addEventListener("click", (e) => {
+        const endPoint = `/blogs/${del.dataset.doc}`;
+
+        fetch(endPoint, {
+          method: "DELETE",
+        })
+          .then((response) => response.json())
+          .then((data) => (window.location.href = data.redirect))
+          .catch((err) => console.log(err));
+      });
+    </script>
+  </body>
+</html>

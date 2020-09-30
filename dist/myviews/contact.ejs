@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+
+    <!-- CSS -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&family=Teko:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./font/et-line-font/style.css" />
+    <link rel="stylesheet" href="./css/flickity.css" />
+
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <link rel="shortcut icon" href="./asset/ico/contact.svg" type="image/x-icon" />
+    <!-- CSS -->
+  </head>
+  <body id="contact-page">
+    <div id="filter"></div>
+
+    <%- include('./partial/nav.ejs') %>
+
+    <main id="contact-main">
+      <section class="contact-main">
+        <div class="contact-nav-bar d-flex-bw align-center">
+          <div class="banner">
+            <div class="animate"></div>
+            <p>scroll down to discover</p>
+          </div>
+
+          <div class="btn contact-back-home">
+            <a href="index.html" class="">back to home</a>
+          </div>
+
+          <div class="window-scroll-progress">
+            <div id="progress-window" class="inner"></div>
+          </div>
+        </div>
+
+        <aside>
+          <div class="contact-side-image">
+            <div class="contact-side-inner">contact</div>
+          </div>
+        </aside>
+
+        <div class="contact-content">
+          <div class="section-border contact-section-1 contact-padding">
+            <div class="section-counter">
+              <div class="section-title">
+                <h2>CONTACT DETAILS</h2>
+                <p>
+                  LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISCING ELIT. MAECENAS IN PULVINAR
+                  NEQUE. NULLA FINIBUS LOBORTIS PULVINAR.
+                </p>
+              </div>
+
+              <!-- details -->
+              <div class="contact-content__details mb-50">
+                <div class="d-flex-bw row">
+                  <!-- item -->
+                  <div class="col-sm-4 col-12">
+                    <div class="contact-content__details-item d-flex">
+                      <div class="icon fz-30 mr-15">
+                        <span class="icon-phone" aria-hidden="true"></span>
+                      </div>
+
+                      <div class="inner">
+                        <h3 class="t-orange fz-12 text-upper mb-5">phone number</h3>
+                        <a class="t-grey fz-10 sp-1" href="tel:0374330516">+84 037 433 0516</a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- item -->
+                  <div class="col-sm-4 col-12">
+                    <div class="contact-content__details-item d-flex">
+                      <div class="icon fz-30 mr-15">
+                        <span class="icon-compass"></span>
+                      </div>
+
+                      <div class="inner">
+                        <h3 class="t-orange fz-12 text-upper mb-5">office location</h3>
+                        <span class="t-grey fz-10 sp-1">USA 27TH Brooklyn NY</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- item -->
+                  <div class="col-sm-4 col-12">
+                    <div class="contact-content__details-item d-flex">
+                      <div class="icon fz-30 mr-15">
+                        <span class="icon-envelope"></span>
+                      </div>
+
+                      <div class="inner">
+                        <h3 class="t-orange fz-12 text-upper mb-5">MY E-MAIL</h3>
+                        <a class="t-grey fz-10 sp-1" href="mailto: bc@example.com"
+                          >Someemail@email.com</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="contact-map">
+                <iframe
+                  class="w-10"
+                  src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d409152.7889179774!2d82.5449512184607!3d29.1111517861423!3m2!1i1024!2i768!4f13.1!5e0!3m2!1svi!2s!4v1598799223717!5m2!1svi!2s"
+                  width="600"
+                  height="450"
+                  frameborder="0"
+                  style="border: 0"
+                  allowfullscreen=""
+                  aria-hidden="false"
+                  tabindex="0"
+                ></iframe>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-padding contact-section-2">
+            <div class="section-counter">
+              <div class="section-title">
+                <h2>GET IN TOUCH</h2>
+                <p>
+                  LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISCING ELIT. MAECENAS IN PULVINAR
+                  NEQUE. NULLA FINIBUS LOBORTIS PULVINAR.
+                </p>
+              </div>
+
+              <div class="contact-form">
+                <form method="POST" name="contact-form" id="contact-form" action="/admin">
+                  <div class="d-flex-bw row">
+                    <div class="col-md-6 col-12 mb-35">
+                      <div class="form-row form-required">
+                        <input
+                          class="w-10 form-control"
+                          type="text"
+                          name="name"
+                          id="name"
+                          required
+                        />
+                        <label for="name" class="t-grey-l fw-3 fz-14">
+                          <span class="icon-profile-male mr-5"></span>
+                          <span>Your Name <sup>*</sup></span>
+                        </label>
+                      </div>
+                    </div>
+
+                    <div class="col-md-6 col-12 mb-35">
+                      <div class="form-row form-required">
+                        <input
+                          class="w-10 form-control"
+                          type="email"
+                          name="email"
+                          id="email"
+                          required
+                        />
+
+                        <label for="email" class="t-grey-l fw-3 fz-14">
+                          <span class="icon-envelope mr-5"></span>
+                          <span>Email Address <sup>*</sup></span>
+                        </label>
+                      </div>
+                    </div>
+
+                    <div class="col-12 mb-35">
+                      <div class="form-row form-mess">
+                        <textarea
+                          class="form-control w-10"
+                          name="message"
+                          id="message"
+                          cols="30"
+                          rows="10"
+                        ></textarea>
+
+                        <label for="message" class="t-grey-l fw-3 fz-14">
+                          <span>Your Message :</span>
+                        </label>
+                      </div>
+                    </div>
+
+                    <div class="col-12">
+                      <button class="btn-orange">send message</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="height-emulator" id="footer-height"></div>
+    </main>
+
+    <%- include('./partial/footer.ejs') %>
+
+    <script src="./script/app.js"></script>
+  </body>
+</html>

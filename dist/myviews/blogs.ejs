@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('./partial/head.ejs') %>
+  <body>
+    <%- include('./partial/nav.ejs') %>
+
+    <main id="blog-main">
+      <section class="blog-main">
+        <div class="blog-nav d-flex-bw align-center">
+          <div class="banner">
+            <div class="animate"></div>
+            <p>scroll down to discover</p>
+          </div>
+
+          <div class="cta">
+            <a class="cta-create" href="/blogs/create">Create a new blog</a>
+          </div>
+
+          <div class="window-scroll-progress">
+            <div id="progress-window" class="inner"></div>
+          </div>
+        </div>
+
+        <aside class="blog-side">
+          <div class="blog-side-inner">blog</div>
+        </aside>
+
+        <div class="blog-main-content">
+          <% if(blogs.length > 0) { %> <% blogs.forEach(blog => { %>
+
+          <div class="blog-item">
+            <h3 class="blog-item__title"><%= blog.title %></h3>
+            <div class="blog-item__label d-flex align-center mb-30">
+              <div class="blog-item__date mr-15"><%= blog._id.getTimestamp() %></div>
+
+              <div class="blog-item__categories text-upper">
+                <span class="t-orange mr-5">Categories :</span>
+                <% if (blog.categories.length > 0) { %> <%= blog.categories %> <% }else { %> Unknown
+                <% } %>
+              </div>
+            </div>
+
+            <div class="blog-item__inner">
+              <p class="mb-40 lh-24"><%= blog.body %></p>
+
+              <a href="/blogs/<%= blog._id %>" class="btn-orange">Read more</a>
+            </div>
+          </div>
+
+          <% }) %> <% }else { %>
+          <p>There are no blogs to display ...</p>
+          <% } %>
+        </div>
+      </section>
+
+      <div class="height-emulator" id="footer-height"></div>
+    </main>
+
+    <%- include('./partial/footer.ejs') %>
+
+    <script src="./script/app.js"></script>
+    <script>
+      const dates = document.querySelectorAll(".blog-item__date");
+      for (let date of dates) {
+        const dateArr = date.innerHTML.split(" ");
+        const newDateArr = dateArr.splice(1, 4);
+        const newDate = newDateArr.splice(0, 3).toString().replace(",", " ");
+        const newTime = newDateArr.toString();
+
+        date.innerHTML = `
+            <span class="mr-3">${newDate}</span>
+            <span  >${newTime}</span>
+            `;
+      }
+    </script>
+  </body>
+</html>

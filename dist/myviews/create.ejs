@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include('./partial/headsingleblog.ejs') %>
+  </head>
+  <body>
+    <div class="blog-create" id="blog-create">
+      <h1 class="text-center fz-40 mb-30">Add a new blog</h1>
+
+      <div class="create-blog-form">
+        <form action="/blogs" method="POST">
+          <div class="form-row">
+            <input
+              class="form-control w-10"
+              type="text"
+              id="title"
+              name="title"
+              required
+              placeholder="Title"
+            />
+          </div>
+
+          <div class="form-row">
+            <input
+              class="form-control w-10"
+              type="text"
+              name="snippet"
+              id="snippet"
+              placeholder="Snippet"
+              required
+            />
+          </div>
+
+          <div class="form-row">
+            <input
+              class="form-control w-10"
+              type="file"
+              name="image"
+              id="image"
+              placeholder="Image"
+            />
+          </div>
+
+          <div class="form-row d-flex">
+            <div class="mr-15">
+              <input type="checkbox" name="categories" id="web-design" value="web-design" />
+              <label for="web-design">web-design</label>
+            </div>
+
+            <div class="mr-15">
+              <input type="checkbox" name="categories" id="photo" value="photo" />
+              <label for="photo">photo</label>
+            </div>
+
+            <div class="mr-15">
+              <input type="checkbox" name="categories" id="branding" value="branding" />
+              <label for="branding">branding</label>
+            </div>
+
+            <div>
+              <input type="checkbox" name="categories" id="ui-design" value="ui-design" />
+              <label for="ui-design">ui-design</label>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <textarea
+              class="form-control w-10"
+              name="body"
+              id="body"
+              cols="30"
+              rows="10"
+              placeholder="Content"
+              required
+            ></textarea>
+          </div>
+
+          <button class="btn-orange">Submit</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include('./partial/head.ejs') %>
+
+    <style>
+      .user-container {
+        background-color: #fff;
+        min-height: 100vh;
+        padding: 15rem;
+      }
+
+      .user-info {
+        border-radius: 0.5rem;
+        border: 0.1rem solid #eee;
+      }
+
+      .user-info__label {
+        padding: 1rem;
+        background-color: #f7f7f7;
+      }
+
+      .date {
+        display: flex;
+        flex-direction: column;
+        justify-content: stretch;
+      }
+
+      .message {
+        padding: 1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="user-container">
+      <div class="d-flex-bw row">
+        <% if (infos.length > 0) { %> <% infos.forEach(info => { %>
+        <div class="col-3 mb-30">
+          <div class="user-info">
+            <div class="user-info__label">
+              <p class="date mb-15"><%= info._id.getTimestamp() %></p>
+              <p class="fz-14 text-upper mb-15"><%= info.name %></p>
+              <p class="t-grey-l fz-12"><%= info.email %></p>
+            </div>
+
+            <p class="message fz-12 t-grey-l">
+              <% if(info.message){ %> <%= info.message %> <% } else { %> No message to display <% }
+              %>
+            </p>
+          </div>
+        </div>
+
+        <% }) %> <% } else { %>
+        <p>No user has contact yet ...</p>
+        <% } %>
+      </div>
+    </div>
+
+    <script>
+      const dates = document.querySelectorAll(".date");
+      for (let date of dates) {
+        const dateArr = date.innerHTML.split(" ");
+        const newDateArr = dateArr.splice(1, 4);
+        const newDate = newDateArr.splice(0, 3).toString().replace(",", " ");
+        const newTime = newDateArr.toString();
+
+        date.innerHTML = `
+            <span class="fz-12 mb-10 t-grey-m">${newDate}</span>
+            <span class="fz-10 t-grey-l">${newTime}</span>
+            `;
+      }
+    </script>
+  </body>
+</html>

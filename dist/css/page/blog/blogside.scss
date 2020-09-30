@@ -1,0 +1,7 @@
+.blog-side {
+  @extend .contact-side-image;
+
+  &-inner {
+    @extend .home-main__image-content;
+  }
+}

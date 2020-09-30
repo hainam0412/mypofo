@@ -1,0 +1,19 @@
+.blog-nav {
+  @extend .contact-nav-bar;
+
+  .cta {
+    &-create {
+      background-color: $light-grey;
+      color: #ccc;
+      padding: 0.8rem 1.5rem;
+      font-size: 1rem;
+      font-weight: 500;
+      text-transform: uppercase;
+      margin-right: 1.5rem;
+
+      &:hover {
+        color: $light-orange;
+      }
+    }
+  }
+}
